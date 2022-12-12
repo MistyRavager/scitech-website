@@ -1,0 +1,12 @@
+############################### Banner ################################
+banner:
+  enable : true
+  bg_image_webp : "images/backgrounds/hero-area.webp"
+  bg_image : "images/backgrounds/hero-area.jpg"
+  icon : "" # themify icon pack : https://themify.me/themify-icons
+  title : "Welcome to Torque"
+  content : "We are the automobile and design club of IIT Hyderabad. We do Lorem ipsum dolor sit amet consectetur adipisicing elit."
+  button:
+    enable : true
+    label : "Explore"
+    link : "#services"
