@@ -1,10 +1,16 @@
-# Notes
-- VSCode extension **"Hugo Language and Syntax Support"** for hugo syntax support
-- VSCode extension **"Even better TOML"** to frikin read `.toml` files
-- \-\-\- in front matter of a content page is YAML, \+\+\+ is TOML
-### sidebar
-- present in `themes/hugo-clarity/layouts/partials/sidebar.html` 
+# Findings 
+- Random:
+    - VSCode extension **"Hugo Language and Syntax Support"** for hugo syntax support
+    - VSCode extension **"Even better TOML"** to frikin read `.toml` files
+    - \-\-\- in front matter of a content page is YAML, \+\+\+ is TOML
 
+- HomePage from `themes/hugo-clarity/layouts/partials/archive.html`
+- Gists of the posts from `themes/hugo-clarity/layouts/partials/excerpt.html`
+    - Metadata like "x min read" and tags are from `themes/hugo-clarity/layouts/partials/post-meta.html`
+- Sidebar
+    - present in `themes/hugo-clarity/layouts/partials/sidebar.html`
+    - parameters present in `config/_default/params.toml` 
+- Navbar taking params from `config/_default/menus/menu.<lang>.toml` and code from `themes/hugo-clarity/layouts/partials/header.html`
 
 # hugoBasicExample
 
