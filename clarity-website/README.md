@@ -3,17 +3,17 @@
     - VSCode extension **"Hugo Language and Syntax Support"** for hugo syntax support
     - VSCode extension **"Even better TOML"** to frikin read `.toml` files
     - \-\-\- in front matter of a content page is YAML, \+\+\+ is TOML
-    - `i18n` stands for `"internationalization"` (18 letters b/w i and n), alias is `T` (which is used in this theme), all translations for the key can be found in `themes/hugo-clarity/i18n/<lang>.toml`
+    - `i18n` stands for `"internationalization"` (18 letters b/w i and n), alias is `T` (which is used in this theme), all translations for the key can be found in `i18n/<lang>.toml`
 
-- HomePage from `themes/hugo-clarity/layouts/partials/archive.html`
-- Gists of the posts from `themes/hugo-clarity/layouts/partials/excerpt.html`
-    - Metadata like "x min read" and tags are from `themes/hugo-clarity/layouts/partials/post-meta.html`
+- HomePage from `layouts/partials/archive.html`
+- Gists of the posts from `layouts/partials/excerpt.html`
+    - Metadata like "x min read" and tags are from `layouts/partials/post-meta.html`
 - Sidebar
-    - present in `themes/hugo-clarity/layouts/partials/sidebar.html`
+    - present in `layouts/partials/sidebar.html`
     - parameters present in `config/_default/params.toml` 
-- Navbar taking params from `config/_default/menus/menu.<lang>.toml` and code from `themes/hugo-clarity/layouts/partials/header.html`
-    - follow buttons from `themes/hugo-clarity/layouts/partials/follow.html`
-    - light/dark mode from `themes/hugo-clarity/layouts/partials/mode.html`
+- Navbar taking params from `config/_default/menus/menu.<lang>.toml` and code from `layouts/partials/header.html`
+    - follow buttons from `layouts/partials/follow.html`
+    - light/dark mode from `layouts/partials/mode.html`
 
 # hugoBasicExample
 
