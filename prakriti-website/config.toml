@@ -10,7 +10,7 @@ paginate = "2" # see https://gohugo.io/extras/pagination/
 # Navbar Menus
 [[menu.main]]
 name = "Home"
-url = "/"
+url = "#"
 weight = 1
 
 [[menu.main]]
