@@ -116,7 +116,7 @@ team:
           link : "#"
         
     # team member loop
-    - name : KJi
+    - name : KG
       image_webp : images/team/team-4.webp
       image : images/team/team-4.jpg
       designation : SEO Specialist
