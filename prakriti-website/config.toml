@@ -1,10 +1,10 @@
-baseURL = "https://demo.gethugothemes.com/timer/site/"
+# baseURL = "https://demo.gethugothemes.com/timer/site/"
 languageCode = "en-us"
 title = "Prakriti"
 theme = "timer-hugo"
 # post pagination
 paginate = "2" # see https://gohugo.io/extras/pagination/
-
+baseURL = "http://localhost:1313/"
 # We Used Ionicons Icon font for Icon, for more details check this link - https://ionicons.com/
 
 # Navbar Menus
