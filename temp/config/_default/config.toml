@@ -5,7 +5,7 @@ baseurl = "https://example.com/"  # Include trailing slash
 copyright = "Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved."
 # canonifyurls = true
 paginate = 10
-theme = ["hugo-clarity","timer-hugo"]
+theme = ["hugo-clarity","meghna-hugo","timer-hugo"]
 disqusShortname = ""
 
 DefaultContentLanguage = "en"
