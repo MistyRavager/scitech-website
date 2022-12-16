@@ -42,7 +42,7 @@ weight = 6
 # Site Params
 [params]
 home = "Home"
-logo = "images/logo.png"
+logo = "images/prakriti_logo.png"
 dateFormat = "6 January 2006"
 # Meta data
 description = "Timer Hugo theme"
@@ -55,7 +55,7 @@ contactFormAction = "#" # contact form works with https://formspree.io
 # Banner Section
 [params.banner]
 enable = true
-bgImage = "images/slider.jpg"
+bgImage = "images/slider2.jpg"
 heading = "Prakriti is the club for "
 description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
 # button
@@ -75,8 +75,8 @@ title = "TREES"
 [params.about]
 enable = true
 title = "ABOUT PRAKRITI"
-content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation<br> <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, adipisci voluptatum repudiandae, natus impedit repellat aut officia illum at assumenda iusto reiciendis placeat. Temporibus, vero."
-image = "images/about/about.jpg"
+content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation<br> <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, adipisci voluptatum repudiandae, natus impedit repellat aut officia illum at assumenda iusto reiciendis placeat. Temporibus, vero.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation<br> <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, adipisci voluptatum repudiandae, natus impedit repellat aut officia illum at assumenda iusto reiciendis placeat. Temporibus, vero."
+image = "images/about/pottedplant.jpg"
 
 # Homepage Teams Section
 [params.team]
@@ -86,9 +86,9 @@ title = "The Team"
 # Call to Action
 [params.cta]
 enable = true
-title = "SO WHAT YOU THINK ?"
+title = "SO WHAT DO YOU THINK ?"
 content = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,<br>possimus commodi, fugiat magnam temporibus vero magni recusandae? Dolore, maxime praesentium."
-btnText = "Contact with me"
+btnText = "Contact us"
 btnURL = "/contact"
 
 # Portfolio Section On Homepage

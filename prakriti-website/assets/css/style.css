@@ -402,8 +402,9 @@ a:hover {
 }
 
 #call-to-action {
-  background: #02bdd5;
+  /* background: #02bdd5; */
   /* background: green; */
+  background: #7bae37;
   background-size: cover;
   background-attachment: fixed;
   padding: 80px 0;
@@ -433,8 +434,8 @@ a:hover {
 #call-to-action .block .btn-contact {
   background: #fff;
   border: 2px solid #fff;
-  color: #02bdd5;
-  /* color: green; */
+  /* color: #02bdd5; */
+  color: green;
   padding: 15px 34px;
   margin-top: 20px;
   font-size: 12px;
@@ -450,8 +451,8 @@ a:hover {
 
 #call-to-action .block .btn-contact:hover {
   color: #fff;
-  background: #02bdd5;
-  /* background: green; */
+  /* background: #02bdd5; */
+  background: green;
 }
 
 #about {

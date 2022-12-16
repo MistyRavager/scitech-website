@@ -1,0 +1,30 @@
+.navbar-brand img {
+    /* width: 15% !important; */
+    margin-top: -15% !important;
+    margin-bottom: -15% !important;
+    width: 7vw !important;
+}
+
+@media (max-width: 480px) {
+    .navbar-brand img {
+        /* width: 15% !important; */
+        margin-top: -15% !important;
+        margin-bottom: -15% !important;
+        width: 10vw !important;
+    }
+  }
+
+#team .title h2{
+    color: green !important;
+}
+#team .title span{
+    color: green !important;
+}
+
+.border-meghna:before {
+    background-color: green !important;
+}
+
+#works figure figcaption h4 a {
+    color: green !important;
+}
