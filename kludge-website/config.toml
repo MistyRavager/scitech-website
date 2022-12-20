@@ -55,11 +55,13 @@ footerSubscribeTitle = "FRANCAIS Subscribe"
 enable = true
 heading = "FRANCAIS We love to make brands grow"
 description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo dolor est incidunt suscipit minima, alias numquam voluptatum rerum porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore at laboriosam unde repellat id expedita quae quisquam libero officia consequatur."
-button = true
+button = false
 btnText = "Know More"
 btnURL = "https://themefisher.com/"
 videoThumb = "images/slider/video-player-thumb.jpg"
 videoURL = "https://www.youtube.com/embed/g3-VxLQO7do"
+bgImage = "images/slider/banner2.jpg"
+
 
 # About 2 Section
 [Languages.fr.params.aboutSm]
@@ -127,11 +129,13 @@ expire_days = 2
 enable = true
 heading = "We love to make brands grow"
 description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo dolor est incidunt suscipit minima, alias numquam voluptatum rerum porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore at laboriosam unde repellat id expedita quae quisquam libero officia consequatur."
-button = true
+button = false
 btnText = "Know More"
 btnURL = "https://themefisher.com/"
 videoThumb = "images/slider/video-player-thumb.jpg"
 videoURL = "https://www.youtube.com/embed/g3-VxLQO7do"
+bgImage = "images/slider/banner2.jpg"
+
 
 # About 2 Section
 [Languages.en.params.aboutSm]

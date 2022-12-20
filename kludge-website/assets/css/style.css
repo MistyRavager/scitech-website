@@ -3,7 +3,7 @@ body {
   line-height: 1.4;
   font-family: "Titillium Web", sans-serif;
   -webkit-font-smoothing: antialiased;
-  background-color: #000;
+  background-color: rgb(0, 0, 0);
   color: white;
 }
 
@@ -448,7 +448,7 @@ a:focus, a:hover {
 }
 
 .single-page-header {
-  background: #1f2532;
+  background: #000000;
   padding: 50px 0;
   text-align: center;
   color: rgb(255, 255, 255);
@@ -470,7 +470,7 @@ a:focus, a:hover {
 
 .navigation {
   transition: .3s all;
-  background: #1f2532;
+  background: #000000;
 }
 
 .select-language a {
@@ -592,7 +592,7 @@ a:focus, a:hover {
 }
 
 .hero-area {
-  padding: 150px 0;
+  padding: 150px 150px 150px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -603,7 +603,14 @@ a:focus, a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #1f2532;
+  /* background-image: url(./../../static/images/slider/banner1.jpg);  */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 220px 0;
+  color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  position: relative;
 }
 
 @media (max-width: 480px) {
