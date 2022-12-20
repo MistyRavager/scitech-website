@@ -1,6 +1,6 @@
 enable    : true
 topTitle   : LITTLE MORE BRIEF
-title     : About Us.
+title     : About Us
 subtitle  : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!
 tabItem   :
   - id        : philosophy

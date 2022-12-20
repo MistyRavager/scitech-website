@@ -4,7 +4,7 @@
 
 body {
   line-height: 1.4;
-  font-family: "DM Mono", monospace;
+  font-family: "Roboto Mono", monospace;
   -webkit-font-smoothing: antialiased;
   background-color: rgb(0, 0, 0);
   color: white;
@@ -60,8 +60,8 @@ a:focus, a:hover {
 }
 
 .btn-main, .btn-main-sm {
-  background-color: #21D6BF;
-  background-image: linear-gradient(100deg, #f9643d, #fe2a77);
+  background-color: #5a5858;
+  /* background-image: linear-gradient(100deg, #3df95f, #2afe4a); */
   color: rgb(255, 255, 255);
   display: inline-block;
   font-size: 14px;
@@ -156,7 +156,7 @@ a:focus, a:hover {
 }
 
 #preloader {
-  background: #32f035;
+  background: #000000;
   height: 100%;
   opacity: 1;
   filter: alpha(opacity=100);
@@ -193,7 +193,7 @@ a:focus, a:hover {
   margin: 0 auto;
   width: 15%;
   height: 15%;
-  background-color: #000;
+  background-color: rgb(255, 255, 255);
   border-radius: 100%;
   -webkit-animation: sk-circleBounceDelay 1.2s infinite ease-in-out both;
   animation: sk-circleBounceDelay 1.2s infinite ease-in-out both;
@@ -477,6 +477,10 @@ a:focus, a:hover {
 .navigation {
   transition: .3s all;
   background: #000000;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
 }
 
 .select-language a {
@@ -610,9 +614,10 @@ a:focus, a:hover {
       -ms-flex-align: center;
           align-items: center;
   /* background-image: url(./../../static/images/slider/banner1.jpg);  */
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-position: center center;
   background-size: cover;
+  background-attachment: fixed;
   padding: 220px 0;
   color: #fff;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);

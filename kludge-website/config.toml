@@ -73,7 +73,7 @@ description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae de
 [Languages.fr.params.blog]
 enable = true
 topTitle = "OUR UNTOLD STORY"
-title = "FRANCAIS Blog."
+title = "FRANCAIS Blog"
 subtitle = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
 
 # Contact Section
@@ -147,7 +147,7 @@ description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae de
 [Languages.en.params.blog]
 enable = true
 topTitle = "OUR UNTOLD STORY"
-title = "Blog."
+title = "Blog"
 subtitle = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
 
 # Contact Section
