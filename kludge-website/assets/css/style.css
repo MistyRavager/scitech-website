@@ -1,21 +1,26 @@
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700");
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
 body {
   line-height: 1.4;
-  font-family: "Titillium Web", sans-serif;
+  font-family: "DM Mono", monospace;
   -webkit-font-smoothing: antialiased;
   background-color: rgb(0, 0, 0);
   color: white;
 }
 
 p {
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Roboto Mono", monospace;
   color: #ffffff;
   font-size: 15px;
+  text-align: justify;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-weight: 600;
+  
 }
 
 /*=== MEDIA QUERY ===*/
@@ -366,7 +371,7 @@ a:focus, a:hover {
 }
 
 .title .border {
-  border: none;
+  /* border:#3232f0; */
   display: inline-block;
   border-radius: 3px;
   height: 6px;
@@ -389,6 +394,7 @@ a:focus, a:hover {
 
 .gradient, .title .border, .service-2 .service-item i {
   background-image: linear-gradient(100deg, #15b457, #32f035);
+  border: none;
 }
 
 .header-bradcrumb {
@@ -1410,16 +1416,16 @@ a:focus, a:hover {
 .team-member .member-content h3 {
   font-size: 20px;
   margin: 0 0 5px;
-  color: #333;
+  color: rgb(255, 255, 255);
 }
 
 .team-member .member-content span {
   font-size: 14px;
-  color: #555;
+  color: rgb(255, 255, 255);
 }
 
 .team-member .member-content p {
-  color: #777;
+  color: rgb(255, 255, 255);
   margin-top: 10px;
   padding: 0 15px;
 }
@@ -1531,7 +1537,7 @@ a:focus, a:hover {
 }
 
 .post-item .post-title h3 a {
-  color: #000;
+  color: rgb(255, 255, 255);
 }
 
 .post-item .post-meta {
@@ -1735,15 +1741,15 @@ a:focus, a:hover {
   Footer section
 ==================================================================*/
 .top-footer {
-  background-color: #222222;
-  border-top: 1px solid #404040;
+  background-color: #000000;
+  border-top: 1px solid #ffffff;
   padding: 100px 0 80px;
 }
 
 .top-footer h3 {
   font-size: 16px;
   line-height: 1.5;
-  color: #000;
+  color: rgb(255, 255, 255);
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -1753,7 +1759,7 @@ a:focus, a:hover {
 .top-footer p {
   font-size: 13px;
   line-height: 30px;
-  color: #000000;
+  color: #ffffff;
   font-weight: 300;
   padding-right: 20px;
 }
@@ -1761,7 +1767,7 @@ a:focus, a:hover {
 .top-footer li a {
   font-size: 13px;
   line-height: 30px;
-  color: #000000;
+  color: #ffffff;
   font-weight: 300;
   letter-spacing: 1px;
   text-transform: capitalize;
@@ -1776,15 +1782,15 @@ a:focus, a:hover {
 
 .footer-bottom {
   text-align: center;
-  background-color: #1b1b1b;
-  border-top: 1px solid #2c2c2c;
+  background-color: #000000;
+  border-top: 1px solid #000000;
   padding: 30px 0;
 }
 
 .footer-bottom h5 {
   font-size: 14px;
   line-height: 1;
-  color: #888888;
+  color: #ffffff;
   font-weight: 400;
   text-transform: uppercase;
   margin-top: 7px;
@@ -1794,7 +1800,7 @@ a:focus, a:hover {
 .footer-bottom h6 {
   font-size: 13px;
   line-height: 15px;
-  color: #888888;
+  color: #ffffff;
   font-weight: 400;
   text-transform: capitalize;
   letter-spacing: 1px;
@@ -1802,7 +1808,7 @@ a:focus, a:hover {
 }
 
 .footer-bottom p {
-  color: #656565;
+  color: #ffffff;
 }
 
 .footer-bottom a {
