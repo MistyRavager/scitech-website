@@ -595,6 +595,7 @@ a:focus, a:hover {
 .navbar-brand {
   height: auto;
   padding: 8px 0;
+  color: white;
 }
 
 .navbar-brand h1 {
@@ -617,8 +618,8 @@ a:focus, a:hover {
   /* background-repeat: no-repeat; */
   background-position: center center;
   background-size: cover;
-  background-attachment: fixed;
-  padding: 220px 0;
+  /* background-attachment: fixed; */
+  padding: 240px 0;
   color: #fff;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
   position: relative;
@@ -654,6 +655,13 @@ a:focus, a:hover {
 .hero-area .block .list-inline {
   margin-top: 50px;
 }
+
+/* .hero-area .block .list-inline .list-inline-item .list-inline-icon{
+  background-color: white;
+  color: white;
+} */
+/* #list-inline-icon{ */
+/* } */
 
 .hero-area .block .btn-main, .hero-area .block .btn-main-sm {
   margin-right: 8px;
@@ -1832,3 +1840,9 @@ a:focus, a:hover {
   font-size: 200px;
 }
 
+.tf-ion-social-twitter{
+  color: blue;
+}
+#list-inline-icon{
+  color: yellow;
+}

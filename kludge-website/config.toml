@@ -109,8 +109,8 @@ languageCode = "en-us"
 title = "Example site multi-language"
 dateFormat = "January 2, 2006"
 home = "Home"
-logo = "images/kludge.jpeg"
-logoTranscript = "Kludg3 II7 Hyd3r464d"
+logo = "images/kludge.png"
+logoTranscript = "Kludg3"
 menufixed = false
 
 footerDescription = "Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus cursus commodo, tortor mauris sed posuere."

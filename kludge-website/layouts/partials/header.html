@@ -9,7 +9,7 @@
             <div class="col-md-12 ">
                 <nav class="navbar navbar-expand-lg ">
                     <a class="navbar-brand" href="{{ .Site.BaseURL | relLangURL }}">
-                        <img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}" height="80">
+                        <img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}" height="80" >
                         {{ .Site.Params.logoTranscript}}
                     </a>
                     <div class="d-flex align-items-center">
@@ -49,15 +49,7 @@
                             </li>
                             {{ end }}
                             {{ end }}
-                            <li class="nav-item d-none d-lg-block">
-                                <!-- Icones & drapeaux de choix des langues -->
-                                <div class="select-language nav-link">
-                                    <!-- Pour passer la langue actuelle (variable globale) dans la range => explicitement -->
-                                    {{ range .Site.Params.listeLangues }}
-                                    {{ partial "flags.html" (dict "site" $.Site "liste" .) }}
-                                    {{ end }}
-                                </div>
-                            </li>
+                            
                         </ul>
                     </div>
                 </nav>
