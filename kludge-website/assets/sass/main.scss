@@ -1,0 +1,342 @@
+$seq-count: 11;
+// binary sequence and corresponding letter
+$map:
+  (seq: (0,0,1,0,0,0,0,1), char: "!"),
+  (seq: (0,0,1,0,0,0,1,0), char: "\""),
+  (seq: (0,0,1,0,0,0,1,1), char: "#"),
+  (seq: (0,0,1,0,0,1,0,0), char: "$"),
+  (seq: (0,0,1,0,0,1,0,1), char: "%"),
+  (seq: (0,0,1,0,0,1,1,0), char: "&"),
+  (seq: (0,0,1,0,0,1,1,1), char: "'"),
+  (seq: (0,0,1,0,1,0,0,0), char: "("),
+  (seq: (0,0,1,0,1,0,0,1), char: ")"),
+  (seq: (0,0,1,0,1,0,1,0), char: "*"),
+  (seq: (0,0,1,0,1,0,1,1), char: "+"),
+  (seq: (0,0,1,0,1,1,0,0), char: ","),
+  (seq: (0,0,1,0,1,1,0,1), char: "-"),
+  (seq: (0,0,1,0,1,1,1,0), char: "."),
+  (seq: (0,0,1,0,1,1,1,1), char: "/"),
+  (seq: (0,0,1,1,0,0,0,0), char: "0"),
+  (seq: (0,0,1,1,0,0,0,1), char: "1"),
+  (seq: (0,0,1,1,0,0,1,0), char: "2"),
+  (seq: (0,0,1,1,0,0,1,1), char: "3"),
+  (seq: (0,0,1,1,0,1,0,0), char: "4"),
+  (seq: (0,0,1,1,0,1,0,1), char: "5"),
+  (seq: (0,0,1,1,0,1,1,0), char: "6"),
+  (seq: (0,0,1,1,0,1,1,1), char: "7"),
+  (seq: (0,0,1,1,1,0,0,0), char: "8"),
+  (seq: (0,0,1,1,1,0,0,1), char: "9"),
+  (seq: (0,0,1,1,1,0,1,0), char: ":"),
+  (seq: (0,0,1,1,1,0,1,1), char: ";"),
+  (seq: (0,0,1,1,1,1,0,0), char: "<"),
+  (seq: (0,0,1,1,1,1,0,1), char: "="),
+  (seq: (0,0,1,1,1,1,1,0), char: ">"),
+  (seq: (0,0,1,1,1,1,1,1), char: "?"),
+  (seq: (0,1,0,0,0,0,0,0), char: "@"),
+  (seq: (0,1,0,1,1,0,1,1), char: "["),
+  (seq: (0,1,0,1,1,1,0,0), char: "\\"),
+  (seq: (0,1,0,1,1,1,0,1), char: "]"),
+  (seq: (0,1,0,1,1,1,1,0), char: "^"),
+  (seq: (0,1,0,1,1,1,1,1), char: "_"),
+  (seq: (0,1,1,0,0,0,0,0), char: "`"),
+  (seq: (0,1,1,1,1,0,1,1), char: "{"),
+  (seq: (0,1,1,1,1,1,0,0), char: "|"),
+  (seq: (0,1,1,1,1,1,0,1), char: "}"),
+  (seq: (0,1,1,1,1,1,1,0), char: "~"),
+  (seq: (0,0,1,0,0,0,0,0), char: "\00a0"),
+  (seq: (0,1,1,0,0,0,0,1), char: "a"),
+  (seq: (0,1,1,0,0,0,1,0), char: "b"),
+  (seq: (0,1,1,0,0,0,1,1), char: "c"),
+  (seq: (0,1,1,0,0,1,0,0), char: "d"),
+  (seq: (0,1,1,0,0,1,0,1), char: "e"),
+  (seq: (0,1,1,0,0,1,1,0), char: "f"),
+  (seq: (0,1,1,0,0,1,1,1), char: "g"),
+  (seq: (0,1,1,0,1,0,0,0), char: "h"),
+  (seq: (0,1,1,0,1,0,0,1), char: "i"),
+  (seq: (0,1,1,0,1,0,1,0), char: "j"),
+  (seq: (0,1,1,0,1,0,1,1), char: "k"),
+  (seq: (0,1,1,0,1,1,0,0), char: "l"),
+  (seq: (0,1,1,0,1,1,0,1), char: "m"),
+  (seq: (0,1,1,0,1,1,1,0), char: "n"),
+  (seq: (0,1,1,0,1,1,1,1), char: "o"),
+  (seq: (0,1,1,1,0,0,0,0), char: "p"),
+  (seq: (0,1,1,1,0,0,0,1), char: "q"),
+  (seq: (0,1,1,1,0,0,1,0), char: "r"),
+  (seq: (0,1,1,1,0,0,1,1), char: "s"),
+  (seq: (0,1,1,1,0,1,0,0), char: "t"),
+  (seq: (0,1,1,1,0,1,0,1), char: "u"),
+  (seq: (0,1,1,1,0,1,1,0), char: "v"),
+  (seq: (0,1,1,1,0,1,1,1), char: "w"),
+  (seq: (0,1,1,1,1,0,0,0), char: "x"),
+  (seq: (0,1,1,1,1,0,0,1), char: "y"),
+  (seq: (0,1,1,1,1,0,1,0), char: "z"),
+  (seq: (0,1,0,0,0,0,0,1), char: "A"),
+  (seq: (0,1,0,0,0,0,1,0), char: "B"),
+  (seq: (0,1,0,0,0,0,1,1), char: "C"),
+  (seq: (0,1,0,0,0,1,0,0), char: "D"),
+  (seq: (0,1,0,0,0,1,0,1), char: "E"),
+  (seq: (0,1,0,0,0,1,1,0), char: "F"),
+  (seq: (0,1,0,0,0,1,1,1), char: "G"),
+  (seq: (0,1,0,0,1,0,0,0), char: "H"),
+  (seq: (0,1,0,0,1,0,0,1), char: "I"),
+  (seq: (0,1,0,0,1,0,1,0), char: "J"),
+  (seq: (0,1,0,0,1,0,1,1), char: "K"),
+  (seq: (0,1,0,0,1,1,0,0), char: "L"),
+  (seq: (0,1,0,0,1,1,0,1), char: "M"),
+  (seq: (0,1,0,0,1,1,1,0), char: "N"),
+  (seq: (0,1,0,0,1,1,1,1), char: "O"),
+  (seq: (0,1,0,1,0,0,0,0), char: "P"),
+  (seq: (0,1,0,1,0,0,0,1), char: "Q"),
+  (seq: (0,1,0,1,0,0,1,0), char: "R"),
+  (seq: (0,1,0,1,0,0,1,1), char: "S"),
+  (seq: (0,1,0,1,0,1,0,0), char: "T"),
+  (seq: (0,1,0,1,0,1,0,1), char: "U"),
+  (seq: (0,1,0,1,0,1,1,0), char: "V"),
+  (seq: (0,1,0,1,0,1,1,1), char: "W"),
+  (seq: (0,1,0,1,1,0,0,0), char: "X"),
+  (seq: (0,1,0,1,1,0,0,1), char: "Y"),
+  (seq: (0,1,0,1,1,0,1,0), char: "Z");
+// binary sequence length
+$seq-length: 8;
+
+// create a selector
+@function selector($s, $i, $v) {
+  @if $v == 0 {
+    @return "#in-#{$s}-#{$i}:not(:checked)";
+  } @else {
+    @return "#in-#{$s}-#{$i}:checked";
+  }
+}
+
+// for each letter
+@each $item in $map {
+  // binary sequence for the letter
+  $seq: map-get($item, seq);
+  // generate the main text selector  
+  $sel-text: "";
+  // generate the nav text selector  
+  $sel-nav: "";
+  // for each group
+  @for $g from 1 through $seq-count {
+    // for each binary value
+    @for $i from 1 through $seq-length {
+      // get the value      
+      $val: nth($seq, $i);
+      // get the selector
+      $sel: selector($g, $i, $val);
+      $sel-text: $sel-text + $sel;
+      $sel-nav: $sel-nav + $sel;
+      // if last, sibling combinator
+      @if $i != $seq-length {
+        $sel-text: $sel-text + " ~ ";
+        $sel-nav: $sel-nav + " ~ ";
+      }
+    }
+    // add output to selector
+    $sel-text: $sel-text + " ~ section .output-#{$g}:after";
+    $sel-nav: $sel-nav + " ~ nav div:nth-child(#{$g}):after";
+    // if not the last group, add comma
+    @if $g != $seq-count {
+      $sel-text: $sel-text + ", ";
+      $sel-nav: $sel-nav + ", ";
+    }
+  }
+  
+  // add output content
+  #{$sel-text} {
+    content: "#{map-get($item, char)}";
+  }
+  // add nav content
+  #{$sel-nav} {
+    content: "“#{map-get($item, char)}”";
+    // frustrating that this is req'd, 
+    // but i need "nil" to look smaller than a binary value
+    font-size: 1em;
+  }
+}
+
+// binary sequence length
+$sel-label: "";
+// for each binary sequence
+@for $s from 1 through $seq-count {
+  // for each binary value
+  @for $i from 1 through $seq-length {
+    // style label
+    $sel-label: $sel-label + "#in-#{$s}-#{$i}:checked ~ nav [for='in-#{$s}-#{$i}']";
+    // if not the last binary value, add comma
+    @if $i != $seq-length {
+      $sel-label: $sel-label + ", ";
+    }
+  }
+  // if not the last group, add comma
+  @if $s != $seq-count {
+    $sel-label: $sel-label + ", ";
+  }
+}
+
+$px: 16px;
+$per-row: 3;
+$label-h: 3 * $px;
+$label-w: 1.5 * $px;
+$label-gutter: 0.4 * $px;
+$label-time: 100ms;
+$label-ease: ease-in-out;
+$c-on: #D0D102;
+$c-on: #FFCC00;
+$c-off: #555;
+$c-label: #00A1CB;
+$c-dark: #616161;
+$c-dark: #313131;
+$c-light: #FFFDF7;
+
+// styling active label
+#{$sel-label} {
+  background: lighten($c-on, 30%);
+  &::after { 
+    top: $label-h / 2 + $label-gutter / 2;
+    background: $c-on;
+    box-shadow: inset 0px 0px 0px 2px darken($c-on, 5%);
+  }
+}
+
+// body style
+body {
+  background-color: $c-dark;
+  color: $c-light;
+  text-align: center;
+  padding-top: 2rem;
+  overflow-x: hidden;
+}
+
+input {
+  opacity: 0.5;
+  transform: scale(0.9);
+  // margin every 8
+  &:nth-of-type(8n) { margin-right: 0.5rem; }
+  // but not at end of row  
+  &:nth-of-type(24n) { margin-right: 0; }
+}
+
+// inline-block every 1,2 br
+br { 
+  display: none;
+  &:nth-of-type(3n) { display: block; }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:900italic);
+$shad: 1px;
+
+// styling the output
+section {
+  text-align: center;
+  h1 {
+    font-size: 4rem;
+    font-family: Roboto, sans-serif;
+    font-style: italic;
+    color: $c-on;
+    letter-spacing: 0.025em;
+    span {
+      text-shadow: -2px -1px 0px lighten($c-on, 30%),
+        4px 4px 0px lighten($c-dark, 10%);
+    }
+  }
+}
+
+// styling the labels
+$div-w: $label-w * $seq-length + ($label-gutter * ($seq-length - 1));
+$div-gutter: 1.2 * $px;
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: $div-w * $per-row + ($div-gutter * $per-row - 1);
+  div {
+    width: $div-w;
+    position: relative;
+    display: flex;
+    margin-bottom: 2.5 * $px + $div-gutter;
+    margin-left: $div-gutter;
+    &:hover:after { color: green }
+    &:nth-child(#{$per-row}n+1) { margin-left: 0; }
+    &::after {
+      content: "nil";
+      font-size: 0.7em;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      display: block;
+      line-height: 2 * $px;
+      box-sizing: border-box;
+      font-family: Menlo, Andale Mono, monspace;
+      padding:  0.5 * $px 0.5rem;
+      text-align: center;
+      transition: color $label-time $label-ease;
+      color: lighten($c-dark, 10%);
+    }
+    label {
+      background: lighten($c-dark, 10%);
+      display: block;
+      height: $label-h;
+      width: $label-w;
+      border-radius: 4px;
+      position: relative;
+      cursor: pointer;
+      box-shadow: 
+        //inset 0px 0px 0px 1px lighten($c-dark, 20%),
+        0px 0px 0px 1px lighten($c-dark, 10%);
+      transition: background $label-time $label-ease;
+      + label { margin-left: $label-gutter; }
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: $label-h / 2 - $label-gutter;
+        width: calc(100% - #{$label-gutter});
+        left: $label-gutter / 2;
+        top: $label-gutter / 2;
+        border-radius: 4px;
+        background: $c-off;
+        box-shadow: inset 0px 0px 0px 2px darken($c-off, 5%);
+        transition: top $label-time $label-ease,
+          box-shadow $label-time $label-ease,
+          background $label-time $label-ease;
+        
+      }
+    }
+  }
+}
+
+// styling the map
+.map {
+  position: fixed;
+  top: 0; right: -100px; bottom: 0;
+  overflow: auto;
+  width: 140px;
+  font-size: 0.8em;
+  background: $c-dark;
+  border: 2px solid lighten($c-dark, 5%);
+  font-family: Menlo, Andale Mono, monspace;
+  box-sizing: border-box;
+  transition: right 200ms ease-in-out;  
+  &:hover { right: 0; }
+  div {
+    display: flex;
+    padding: 0.5rem 0.25rem;
+    &:nth-child(odd) {
+      background: lighten($c-dark, 5%);
+    }
+    span {
+      &:nth-child(odd) { 
+        flex: 1; 
+        color: $c-on;
+      }
+      &:nth-child(even) { 
+        flex: 3; 
+        color: lighten($c-on, 30%);
+      }
+      text-align: center;
+    }
+  }
+}

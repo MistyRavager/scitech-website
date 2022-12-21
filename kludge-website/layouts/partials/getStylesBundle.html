@@ -1,0 +1,6 @@
+<!-- styles definition-->
+{{ $options := (dict "targetPath" "css/styles.css" "outputStyle" "compressed" "enableSourceMap" "true") }}
+{{ $sass := resources.Get "sass/main.scss" }}
+{{ $styles1 := $sass | resources.ToCSS }}
+
+{{ return $styles1 }}
