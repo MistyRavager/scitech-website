@@ -223,14 +223,14 @@ name = "partners"
 url = "about/"
 weight = 1
 [[menu.quicklink]]
-name = "about"
-url = "about/"
+name = "blog"
+url = "blog/"
 weight = 2
 [[menu.quicklink]]
-name = "faqs"
+name = "about"
 url = "about/"
 weight = 3
 [[menu.quicklink]]
-name = "badges"
+name = "faqs"
 url = "about/"
 weight = 4

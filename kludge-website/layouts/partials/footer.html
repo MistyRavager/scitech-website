@@ -3,11 +3,11 @@
     <div class="top-footer">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4 col-md-4 col-lg-4">
+                <div class="col-sm-8 col-md-8 col-lg-8">
                     <h3>{{ .Site.Params.footerAboutTitle }}</h3>
                     {{ with .Site.Params.footerDescription }}<p>{{ . }}</p>{{ end }}
                 </div>
-                <div class="col-sm-4 col-md-4 col-lg-4">
+                <!-- <div class="col-sm-4 col-md-4 col-lg-4">
                     <h3>{{ .Site.Params.footerServiceTitle }}</h3>
                     <ul>
                         {{ range .Site.Menus.service }}
@@ -16,7 +16,7 @@
                         </li>
                         {{ end }}
                     </ul>
-                </div>
+                </div> -->
                 <div class="col-sm-4 col-md-4 col-lg-4">
                     <h3>{{ .Site.Params.footerQuicklinkTitle }}</h3>
                     <ul>
@@ -40,11 +40,8 @@
         </div>
     </div>
     <div class="footer-bottom">
-        <h5>Copyright 2021. All rights reserved.</h5>
-        <h6>Design and Developed by Themefisher
-            <br>Get More
-            <a href="https://themefisher.com/hugo-themes/" target="_blank">Themefisher</a>
-        </h6>
+        <h5>&#169; Copyright 2021. All rights reserved.</h5>
+        <h6>Design and Developed by Kludge</h6>
     </div>
 </footer>
 {{ "<!-- end footer -->" | safeHTML }}
