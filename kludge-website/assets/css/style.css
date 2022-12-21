@@ -645,11 +645,14 @@ a:focus, a:hover {
 .hero-area .block h2 {
   font-size: 48px;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .hero-area .block p {
   color: #ffffff;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+  font-size: 20px;
+  text-align: left;
 }
 
 .hero-area .block .list-inline {

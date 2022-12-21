@@ -128,8 +128,8 @@ expire_days = 2
 # Hero Area Section
 [Languages.en.params.hero]
 enable = true
-heading = "We love to make brands grow"
-description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo dolor est incidunt suscipit minima, alias numquam voluptatum rerum porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore at laboriosam unde repellat id expedita quae quisquam libero officia consequatur."
+clubName = "Kludge"
+description = "The Information Security and Networking Club of IIT Hyderabad"
 button = false
 btnText = "Know More"
 btnURL = "https://themefisher.com/"
@@ -187,21 +187,21 @@ name = "about"
 url = "about/"
 weight = 2
 [[menu.nav]]
-name = "service"
-url = "service/"
-weight = 3
-[[menu.nav]]
-name = "portfolio"
-url = "portfolio/"
-weight = 4
-[[menu.nav]]
 name = "blog"
 url = "blog/"
-weight = 5
+weight = 3
+[[menu.nav]]
+name = "service"
+url = "service/"
+weight = 4
+[[menu.nav]]
+# name = "portfolio"
+# url = "portfolio/"
+# weight = 4
 [[menu.nav]]
 name = "contact"
 url = "contact/"
-weight = 6
+weight = 5
 
 # Footer Service Menu
 [[menu.service]]
