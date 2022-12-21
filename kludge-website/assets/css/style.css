@@ -935,7 +935,6 @@ a:focus, a:hover {
   height: 30px;
   width: 30px;
   text-align: center;
-  color: #32f035;
 }
 
 .social-icon li a i {
@@ -1458,8 +1457,7 @@ a:focus, a:hover {
 }
 
 .team-member .member-content ul li a i {
-  color: #32f035;
-  background: linear-gradient(100deg, #f9643d, #fe2a77);
+  background-color: #32f035;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1470,15 +1468,63 @@ a:focus, a:hover {
   border: 1px solid transparent;
 }
 
-.team-member .member-photo {
+.team-member .member-outline .member-photo {
   overflow: hidden;
   position: relative;
 }
-
-.team-member .member-photo img {
+.team-member .diamond, .dia {
+  margin: 0 auto;
+  transform-origin: 50% 50%;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+}
+.team-member .diamond {
+  transform: rotate(45deg) translateY(-25px) translateX(-25px);
+}
+.team-member .diamond .dia {
+  width: 380px;
+  height: 380px;
+  transform: rotate(-45deg);
+}
+.team-member .diamond img {
+  width: 100%;
+  height: auto;
   transition: all 0.6s ease 0s;
 }
+.team-member .member-outline .member-photo img {
+  transition: all 0.6s ease 0s;
+  border-radius: 50%;
+}
+.hexa, .hexa div {
+  margin: 0 auto;
+  transform-origin: 50% 50%;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+}
+.hexa {
+  width: 325px;
+  height: 230px;
+}
+.hexa div {
+  width: 100%;
+  height: 100%;
+}
+.hexa .hex1 .hex2 img {
+  transition: all 0.6s ease 0s;
 
+  
+}
+.hexa {
+  transform: rotate(120deg);
+}
+.hex1 {
+  transform: rotate(-60deg);
+}
+.hex2 {
+  transform: rotate(-60deg);
+}
 /*=================================================================
   Testimonial section
 ==================================================================*/
@@ -1838,11 +1884,4 @@ a:focus, a:hover {
 
 .page-404 h1 {
   font-size: 200px;
-}
-
-.tf-ion-social-twitter{
-  color: blue;
-}
-#list-inline-icon{
-  color: yellow;
 }

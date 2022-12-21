@@ -6,7 +6,7 @@ subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reicie
 member  :
   - image         : images/team/member-1.jpg
     name          : Shawshank Redemption
-    designation   : Head Of Marketing
+    designation   : Mentor
     description   : >
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
     facebookURL   : https://www.facebook.com/
@@ -14,19 +14,11 @@ member  :
     gplusURL      : https://plus.google.com/
     dribbbleURL   : https://dribbble.com/
 
-  - image         : images/team/member-2.jpg
-    name          : Leo Departure
-    designation   : Web Developer
-    description   : >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
-    facebookURL   : https://www.facebook.com/
-    twitterURL    : https://twitter.com/
-    gplusURL      : https://plus.google.com/
-    dribbbleURL   : https://dribbble.com/
+  
 
   - image         : images/team/member-3.jpg
     name          : Remoni Rio
-    designation   : Senior Developer
+    designation   : Mentor
     description   : >
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
     facebookURL   : https://www.facebook.com/
@@ -36,7 +28,114 @@ member  :
 
   - image         : images/team/member-4.jpg
     name          : Lawandeski Roma
-    designation   : Designer
+    designation   : Coordinator
+    description   : >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
+    facebookURL   : https://www.facebook.com/
+    twitterURL    : https://twitter.com/
+    gplusURL      : https://plus.google.com/
+    dribbbleURL   : https://dribbble.com/
+  - image         : images/team/member-1.jpg
+    name          : Shawshank Redemption
+    designation   : Coordinator
+    description   : >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
+    facebookURL   : https://www.facebook.com/
+    twitterURL    : https://twitter.com/
+    gplusURL      : https://plus.google.com/
+    dribbbleURL   : https://dribbble.com/
+  - image         : images/team/member-1.jpg
+    name          : Shawshank Redemption
+    designation   : Core
+    description   : >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
+    facebookURL   : https://www.facebook.com/
+    twitterURL    : https://twitter.com/
+    gplusURL      : https://plus.google.com/
+    dribbbleURL   : https://dribbble.com/
+
+  - image         : images/team/member-2.jpg
+    name          : Leo Departure
+    designation   : Core
+    description   : >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
+    facebookURL   : https://www.facebook.com/
+    twitterURL    : https://twitter.com/
+    gplusURL      : https://plus.google.com/
+    dribbbleURL   : https://dribbble.com/
+  - image         : images/team/member-2.jpg
+    name          : Leo Departure
+    designation   : Coordinator
+    description   : >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
+    facebookURL   : https://www.facebook.com/
+    twitterURL    : https://twitter.com/
+    gplusURL      : https://plus.google.com/
+    dribbbleURL   : https://dribbble.com/
+
+  - image         : images/team/member-3.jpg
+    name          : Remoni Rio
+    designation   : Core
+    description   : >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
+    facebookURL   : https://www.facebook.com/
+    twitterURL    : https://twitter.com/
+    gplusURL      : https://plus.google.com/
+    dribbbleURL   : https://dribbble.com/
+    
+  
+
+  - image         : images/team/member-3.jpg
+    name          : Remoni Rio
+    designation   : Core
+    description   : >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
+    facebookURL   : https://www.facebook.com/
+    twitterURL    : https://twitter.com/
+    gplusURL      : https://plus.google.com/
+    dribbbleURL   : https://dribbble.com/
+
+  - image         : images/team/member-4.jpg
+    name          : Lawandeski Roma
+    designation   : Core
+    description   : >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
+    facebookURL   : https://www.facebook.com/
+    twitterURL    : https://twitter.com/
+    gplusURL      : https://plus.google.com/
+    dribbbleURL   : https://dribbble.com/
+  - image         : images/team/member-1.jpg
+    name          : Shawshank Redemption
+    designation   : Core
+    description   : >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
+    facebookURL   : https://www.facebook.com/
+    twitterURL    : https://twitter.com/
+    gplusURL      : https://plus.google.com/
+    dribbbleURL   : https://dribbble.com/
+
+  - image         : images/team/member-2.jpg
+    name          : Leo Departure
+    designation   : Core
+    description   : >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
+    facebookURL   : https://www.facebook.com/
+    twitterURL    : https://twitter.com/
+    gplusURL      : https://plus.google.com/
+    dribbbleURL   : https://dribbble.com/
+
+  - image         : images/team/member-3.jpg
+    name          : Remoni Rio
+    designation   : Core
+    description   : >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
+    facebookURL   : https://www.facebook.com/
+    twitterURL    : https://twitter.com/
+    gplusURL      : https://plus.google.com/
+    dribbbleURL   : https://dribbble.com/
+  - image         : images/team/member-2.jpg
+    name          : Leo Departure
+    designation   : Mentor
     description   : >
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
     facebookURL   : https://www.facebook.com/
