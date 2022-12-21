@@ -181,8 +181,8 @@ $label-w: 1.5 * $px;
 $label-gutter: 0.4 * $px;
 $label-time: 100ms;
 $label-ease: ease-in-out;
-$c-on: #D0D102;
-$c-on: #FFCC00;
+$c-on: #029ad1;
+$c-on: #00eeff;
 $c-off: #555;
 $c-label: #00A1CB;
 $c-dark: #616161;
@@ -201,8 +201,6 @@ $c-light: #FFFDF7;
 
 // body style
 body {
-  background-color: $c-dark;
-  color: $c-light;
   text-align: center;
   padding-top: 2rem;
   overflow-x: hidden;
@@ -224,6 +222,8 @@ br {
 }
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:900italic);
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap);
+
 $shad: 1px;
 
 // styling the output
@@ -231,8 +231,8 @@ section {
   text-align: center;
   h1 {
     font-size: 4rem;
-    font-family: Roboto, sans-serif;
-    font-style: italic;
+    font-family: RobotoMono, monospace;
+    // font-style: italic;
     color: $c-on;
     letter-spacing: 0.025em;
     span {
@@ -257,7 +257,7 @@ $div-gutter: 1.2 * $px;
     display: flex;
     margin-bottom: 2.5 * $px + $div-gutter;
     margin-left: $div-gutter;
-    &:hover:after { color: green }
+    &:hover:after { color: lighten($c-dark, 50%) }
     &:nth-child(#{$per-row}n+1) { margin-left: 0; }
     &::after {
       content: "nil";
@@ -320,6 +320,7 @@ $div-gutter: 1.2 * $px;
   font-family: Menlo, Andale Mono, monspace;
   box-sizing: border-box;
   transition: right 200ms ease-in-out;  
+  z-index: 101;
   &:hover { right: 0; }
   div {
     display: flex;
