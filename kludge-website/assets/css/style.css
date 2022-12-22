@@ -58,7 +58,110 @@ a, a:focus, a:hover {
 a:focus, a:hover {
   color: #32f035;
 }
+.button-hover-hero {
+  display: inline-block;
+  position: relative;
+  margin: 1em;
+  padding: 0.67em;
+  border: 2px solid #FFF;
+  overflow: hidden;
+  text-decoration: none;
+  font-size: 2em;
+  outline: none;
+  color: #FFF;
+  background: transparent;
+  font-family: 'raleway', sans-serif;
+}
+.button-hover-hero span {
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+.button-hover-hero:before,
+.button-hover-hero:after {
+    content: '';
+    position: absolute;
+    top: 0.67em;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: .4s,opacity .6s;
+    -moz-transition: .4s,opacity .6s;
+    -o-transition: .4s,opacity .6s;
+    transition: .4s,opacity .6s;
+}
 
+/* :before */
+
+.button-hover-hero:before {
+    content: attr(data-hover);
+    -webkit-transform: translate(-150%,0);
+    -moz-transform: translate(-150%,0);
+    -ms-transform: translate(-150%,0);
+    -o-transform: translate(-150%,0);
+    transform: translate(-150%,0);
+}
+
+/* :after */
+
+.button-hover-hero:after {
+    content: attr(data-active);
+    -webkit-transform: translate(150%,0);
+    -moz-transform: translate(150%,0);
+    -ms-transform: translate(150%,0);
+    -o-transform: translate(150%,0);
+    transform: translate(150%,0);
+}
+.button-hover-hero:hover span,
+.button-hover-hero:active span {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    -o-transform: scale(0.3);
+    transform: scale(0.3);
+}
+
+/*  
+    We show :before pseudo-element on :hover 
+    and :after pseudo-element on :active 
+*/
+
+.button-hover-hero:hover:before,
+.button-hover-hero:active:after {
+    opacity: 1;
+    -webkit-transform: translate(0,0);
+    -moz-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    transform: translate(0,0);
+    -webkit-transition-delay: .4s;
+    -moz-transition-delay: .4s;
+    -o-transition-delay: .4s;
+    transition-delay: .4s;
+}
+
+/* 
+  We hide :before pseudo-element on :active
+*/
+
+.button-hover-hero:active:before {
+    -webkit-transform: translate(-150%,0);
+    -moz-transform: translate(-150%,0);
+    -ms-transform: translate(-150%,0);
+    -o-transform: translate(-150%,0);
+    transform: translate(-150%,0);
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
 .btn-main, .btn-main-sm {
   background-color: #5a5858;
   /* background-image: linear-gradient(100deg, #3df95f, #2afe4a); */
@@ -70,6 +173,7 @@ a:focus, a:hover {
   text-transform: uppercase;
   border: 1px solid transparent;
   border-radius: 2px;
+  
 }
 
 .btn-main:hover, .btn-main-sm:hover {
@@ -1466,39 +1570,13 @@ a:focus, a:hover {
   -webkit-text-fill-color: transparent;
 }
 
-.team-member .member-content ul li a::hover {
-  background-color: #6cb670;
-  border: 1px solid transparent;
-}
 
-.team-member .member-outline .member-photo {
-  overflow: hidden;
-  position: relative;
-}
-.team-member .diamond, .dia {
-  margin: 0 auto;
-  transform-origin: 50% 50%;
-  overflow: hidden;
-  width: 300px;
-  height: 300px;
-}
-.team-member .diamond {
-  transform: rotate(45deg) translateY(-25px) translateX(-25px);
-}
-.team-member .diamond .dia {
-  width: 380px;
-  height: 380px;
-  transform: rotate(-45deg);
-}
-.team-member .diamond img {
-  width: 100%;
-  height: auto;
-  transition: all 0.6s ease 0s;
-}
 .team-member .member-outline .member-photo img {
   transition: all 0.6s ease 0s;
   border-radius: 50%;
+  
 }
+
 .hexa, .hexa div {
   margin: 0 auto;
   transform-origin: 50% 50%;
@@ -1578,13 +1656,14 @@ a:focus, a:hover {
   Latest Posts
 ==================================================================*/
 .post-item {
-  background: #000;
-  margin-bottom: 40px;
+  background: rgb(93, 80, 80);
+  height: 550px;
+  margin-bottom: 20px;
 }
 
-.post-item .post-thumb {
+/* .post-item .post-thumb {
   margin-right: 10px;
-}
+} */
 
 .post-item .post-thumb img {
   height: auto;

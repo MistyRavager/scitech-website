@@ -20,10 +20,10 @@
                 {{ range .member }}
                 {{ if eq .designation "Mentor"}}
                     {{ "<!-- team member -->" | safeHTML }}
-                    <div class="col-12 offset-md-1 col-md-5 col-sm-6">
+                    <div class="col-12 offset-md-1 col-md-5 col-sm-5">
                         <div class="team-member text-center">
-                            <div class="diamond">
-                                <div class="dia">
+                            <div class="member-outline">
+                                <div class="member-photo">
                                     <img class="img-fluid" src="{{.image | absURL }}" alt="team people">
                                 </div>
                             </div>
@@ -74,11 +74,9 @@
                     {{ "<!-- team member -->" | safeHTML }}
                     <div class="col-12 col-md-4 col-sm-4">
                         <div class="team-member text-center">
-                            <div class="hexa">
-                                <div class="hex1">
-                                    <div class="hex2">
-                                        <img class="img-fluid" src="{{.image | absURL }}" alt="team people">
-                                    </div>
+                            <div class="member-outline">
+                                <div class="member-photo">
+                                    <img class="img-fluid" src="{{.image | absURL }}" alt="team people" >
                                 </div>
                             </div>
                             {{ "<!-- member name & designation -->" | safeHTML }}

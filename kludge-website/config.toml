@@ -130,6 +130,7 @@ expire_days = 2
 enable = true
 clubName = "Kludge"
 description = "The Information Security and Networking Club of IIT Hyderabad"
+aka = "A.K.A The Hacking Club of IIT Hyderabad"
 button = false
 btnText = "Know More"
 btnURL = "https://themefisher.com/"
