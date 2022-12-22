@@ -1,13 +1,12 @@
-baseURL = "https://demo.gethugothemes.com/navigator/examplesite/"
 languageCode = "en-us"
-title = "Navigator | Responsive Multipurpose Bootstrap Hugo Template"
+title = "Kludge Website"
 theme = "navigator-hugo"
 summaryLength = 10
 
 # Build robots.txt file
 enableRobotsTXT = true
 # google analytics tracking id
-googleAnalytics = "" # your analitics ID
+# googleAnalytics = "" # your analitics ID
 
 enableGitInfo = false
 pygmentsCodeFences = true
@@ -19,94 +18,24 @@ DefaultContentLanguage = "en"
 
 # Site Params
 [params]
-logo = "images/logo.png"
+logo = "images/kludge.png"
 
-# Gestion des langues : FR / EN / NL / DE
-[[Params.listeLangues]]
-code = "fr"
+# Gestion des langues : EN
 [[Params.listeLangues]]
 code = "en"
 
 # meta data
-author = "Themefisher"
-description = "This is meta description"
+author = "Kludge"
+description = "This is the website for Infosec and Networking Club of IITH"
 
 # Gestion des langues : FR / EN / NL / DE
 [Languages]
-############ 1 - Site en FRANCAIS
-[Languages.fr]
-weight = 1
-languageCode = "fr-fr"
-title = "FRANCAIS Example site multi-language"
-dateFormat = "2 January 2006"
-
-home = "Home"
-logo = "images/logo.png"
-menufixed = false
-
-footerDescription = "FRANCAIS Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus cursus commodo, tortor mauris sed posuere."
-footerServiceTitle = "FRANCAIS Services"
-footerQuicklinkTitle = "FRANCAIS Quick links"
-footerAboutTitle = "FRANCAIS About"
-footerSubscribeTitle = "FRANCAIS Subscribe"
-
-# Hero Area Section
-[Languages.fr.params.hero]
-enable = true
-heading = "FRANCAIS We love to make brands grow"
-description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo dolor est incidunt suscipit minima, alias numquam voluptatum rerum porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore at laboriosam unde repellat id expedita quae quisquam libero officia consequatur."
-button = false
-btnText = "Know More"
-btnURL = "https://themefisher.com/"
-videoThumb = "images/slider/video-player-thumb.jpg"
-videoURL = "https://www.youtube.com/embed/g3-VxLQO7do"
-bgImage = "images/slider/banner2.jpg"
-
-
-# About 2 Section
-[Languages.fr.params.aboutSm]
-enable = true
-title = "FRANCAIS We have explored the digital landscape with passion for a long time"
-description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae deleniti ipsa labore necessitatibus culpa veritatis quo accusantium, neque enim ea ad eaque iure, quas tempore velit, quibusdam dolor illo! Explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quisquam maiores iste soluta, nihil dolorem?"
-
-# Blog Section On Homepage
-[Languages.fr.params.blog]
-enable = true
-topTitle = "OUR UNTOLD STORY"
-title = "FRANCAIS Blog"
-subtitle = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
-
-# Contact Section
-[Languages.fr.params.contact]
-enable = true
-topTitle = "DROP US A NOTE"
-title = "FRANCAIS Contact Us."
-subtitle = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
-address = "14/05, Stockhome <br> Victori Palace , United States"
-phone = "(03) 9283 2617"
-fax = "+61 3827 3590"
-facebook = "https://www.facebook.com/"
-twitter = "https://twitter.com/"
-linkedin = "https://www.linkedin.com/"
-dribbble = "https://dribbble.com/"
-instagram = "https://www.instagram.com/"
-mapLatitude = "51.507351"
-mapLongitude = "-0.127758"
-mapMarker = "images/marker.png"
-
-# Call to Action Section on About Page
-[Languages.fr.params.cta]
-enable = true
-bg = "images/call-to-action/call-to-action-bg-2.jpg"
-title = "FRANCAIS Let's Create Something Together"
-subtitle = "Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, <br> nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit."
-btnText = "Nous contacter"
 
 ############# 2 - Site en ENGLISH
 [Languages.en]
 weight = 2
 languageCode = "en-us"
-title = "Example site multi-language"
+title = "Kludge | IIT Hyderabad"
 dateFormat = "January 2, 2006"
 home = "Home"
 logo = "images/kludge.png"
@@ -114,10 +43,8 @@ logoTranscript = "Kludg3"
 menufixed = false
 
 footerDescription = "Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus cursus commodo, tortor mauris sed posuere."
-footerServiceTitle = "Service"
 footerQuicklinkTitle = "Quicklinks"
 footerAboutTitle = "About"
-footerSubscribeTitle = "Subscribe"
 
 
 # cookies
@@ -132,10 +59,6 @@ clubName = "Kludge"
 description = "The Information Security and Networking Club of IIT Hyderabad"
 aka = "A.K.A The Hacking Club of IIT Hyderabad"
 button = false
-btnText = "Know More"
-btnURL = "https://themefisher.com/"
-videoThumb = "images/slider/video-player-thumb.jpg"
-videoURL = "https://www.youtube.com/embed/g3-VxLQO7do"
 bgImage = "images/slider/banner2.jpg"
 
 
