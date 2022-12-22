@@ -1,25 +1,31 @@
 enable : true
 item    :
   - quote       : >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla, soluta dolorum. Eos earum, magni asperiores, unde corpori labore, enim, voluptatum officiis voluptates alias natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quia?
-    clientThumb : images/client-logo/clients-1.jpg
-    clientName  : Matt Cutts
-    clientDesignation: CEO , Company Name
+      Passwords are like underwear: don't let people see it, change it very often and you shouldn't share it with strangers
+    clientThumb : images/client-logo/Chris_Pirillo.jpg
+    clientName  : Chris Pirillo
+    clientDesignation: Founder , LockerGnome
 
   - quote       : >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla, soluta dolorum. Eos earum, magni asperiores, unde corpori labore, enim, voluptatum officiis voluptates alias natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quia?
-    clientThumb : images/client-logo/clients-2.jpg
-    clientName  : Elon Mask
-    clientDesignation: CEO , Company Name
+      If you know cybersecurity, you have a job for life
+    clientThumb : images/client-logo/Robert_H.jpeg
+    clientName  : Robert Herjavec
+    clientDesignation: Businessman, Investor
 
   - quote       : >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla, soluta dolorum. Eos earum, magni asperiores, unde corpori labore, enim, voluptatum officiis voluptates alias natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quia?
-    clientThumb : images/client-logo/clients-1.jpg
-    clientName  : Matt Cutts
-    clientDesignation: CEO , Company Name
+      The police can't protect consumers. People need to be more aware and educated about identity theft. You need to be a little bit wiser, a little bit smarter and there's nothing wrong with being skeptical. We live in a time when if you make it easy for someone to steal from you, someone will.
+    clientThumb : images/client-logo/Abagnale.jpeg
+    clientName  : Frank Abagnale Jr
+    clientDesignation: Secure document consultant, also guy behind "Catch me if you can" movie
 
   - quote       : >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla, soluta dolorum. Eos earum, magni asperiores, unde corpori labore, enim, voluptatum officiis voluptates alias natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quia?
-    clientThumb : images/client-logo/clients-2.jpg
-    clientName  : Elon Mask
-    clientDesignation: CEO , Company Name
+      Rule 1: If you didn't go looking for it, don't install it. Rule 2: If you installed it, update it! Rule 3: If you no longer need it, remove it!
+    clientThumb : images/client-logo/Krebs.jpg
+    clientName  : Brian Krebs
+    clientDesignation: Journalist, Investigative reporter
+
+  - quote       : >
+      It is a fairly open secret that almost all systems can be hacked, somehow. It is a less spoken of secret that such hacking has actually gone quite mainstream.
+    clientThumb : images/client-logo/Kaminsky.jpg
+    clientName  : Dan Kaminsky
+    clientDesignation: Computer security researcher, Co-founder of WhiteOps, ex-Ethical hacker 
