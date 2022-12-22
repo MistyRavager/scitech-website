@@ -562,6 +562,7 @@ a:focus, a:hover {
   text-align: center;
   color: rgb(255, 255, 255);
   position: relative;
+  margin-top: 50px;
 }
 
 .single-page-header .breadcrumb {
