@@ -20,7 +20,7 @@
                 {{ range .member }}
                 {{ if eq .designation "Mentor"}}
                     {{ "<!-- team member -->" | safeHTML }}
-                    <div class="col-12 offset-md-1 col-md-5 col-sm-5">
+                    <div class="col-12 col-lg-6 col-md-12 col-sm-12">
                         <div class="team-member text-center">
                             <div class="member-outline">
                                 <div class="member-photo">
@@ -31,11 +31,21 @@
                             <div class="member-content">
                                 <h3>{{ .name }}</h3>
                                 <span>{{ .designation }}</span>
+                                {{ with .Email}}
+                                <h6>{{.}}</h6>
+                                {{ end }}
                                 <ul class="list-inline">
                                     {{ with .GithubURL }}
                                     <li class="list-inline-item">
                                         <a href="{{.}}" id ="list-inline-icon">
                                             <i class="ion-social-github"></i>
+                                        </a>
+                                    </li>
+                                    {{ end }}
+                                    {{ with .Email}}
+                                    <li class="list-inline-item">
+                                        <a href="{{.}}" id ="list-inline-icon">
+                                            <i class="ion-social-gmail"></i>
                                         </a>
                                     </li>
                                     {{ end }}
@@ -51,7 +61,7 @@
                 {{ range .member }}
                 {{ if eq .designation "Coordinator"}}
                     {{ "<!-- team member -->" | safeHTML }}
-                    <div class="col-12 col-md-4 col-sm-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="team-member text-center">
                             <div class="member-outline">
                                 <div class="member-photo">
@@ -62,8 +72,11 @@
                             <div class="member-content">
                                 <h3>{{ .name }}</h3>
                                 <span>{{ .designation }}</span>
+                                {{ with .Email}}
+                                <h6>{{.}}</h6>
+                                {{ end }}
+                                {{ with .GithubURL }}
                                 <ul class="list-inline">
-                                    {{ with .GithubURL }}
                                     <li class="list-inline-item">
                                         <a href="{{.}}" id ="list-inline-icon">
                                             <i class="ion-social-github"></i>
@@ -82,7 +95,7 @@
                 {{ range .member }}
                 {{ if eq .designation "Core"}}
                     {{ "<!-- team member -->" | safeHTML }}
-                    <div class="col-12 col-md-3 col-sm-4">
+                    <div class="col-12 col-lg-3 col-md-4 col-sm-6">
                         <div class="team-member text-center">
                             <div class="member-outline">
                                 <div class="member-photo">
@@ -93,6 +106,9 @@
                             <div class="member-content">
                                 <h3>{{ .name }}</h3>
                                 <span>{{ .designation }}</span>
+                                {{ with .Email}}
+                                <h6>{{.}}</h6>
+                                {{ end }}
                                 <ul class="list-inline">
                                     {{ with .GithubURL }}
                                     <li class="list-inline-item">

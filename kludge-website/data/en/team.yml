@@ -7,16 +7,16 @@ member  :
   - image         : images/team/Arsalan.jpeg
     name          : Arsalan Sheikh
     designation   : Mentor
-    Email         : es19btech11025@iith.ac.in
+    Email         : es19btech11025
     GithubURL     : 
 
   - image         : images/team/Angad.jpeg
     name          : Gunangad Pal Singh Narula 
     designation   : Mentor
-    Email         : cs19btech11035@iith.ac.in
+    Email         : cs19btech11035
     GithubURL     : 
 
-  - image         : images/team/member-4.jpg
+  - image         : images/team/member-1.jpg
     name          : Someone
     designation   : Mentor
     Email         : 
@@ -25,83 +25,83 @@ member  :
   - image         : images/team/Syed.jpeg
     name          : Syed Saqeeb Habeeb
     designation   : Coordinator
-    Email         : bm20btech11015@iith.ac.in
+    Email         : bm20btech11015
     GithubURL     : https://github.com/theCapedCrusader7
 
   - image         : images/team/Deepak.jpg
     name          : VKS Deepak Reddy
     designation   : Coordinator
-    Email         : ma20btech11019@iith.ac.in
+    Email         : ma20btech11019
     GithubURL     : https://github.com/DeepakReddyVelagala
   
   - image         : images/team/Abhinav.jpg
     name          : Abhinav Yadav
     designation   : Core
-    Email         : cs21btech11002@iith.ac.in
+    Email         : cs21btech11002
     GithubURL     : 
 
   - image         : images/team/Aditya.jpg
     name          : Aditya Unal
     designation   : Core
-    Email         : bm21btech11003@iith.ac.in
+    Email         : bm21btech11003
     GithubURL     : 
 
   - image         : images/team/Chirag.jpg
     name          : Chirag Mehta
     designation   : Core
-    Email         : ai20btech11006@iith.ac.in
+    Email         : ai20btech11006
     GithubURL     : https://github.com/cmaspi
 
   - image         : images/team/Gautam.jpeg
     name          : Gautam Singh
     designation   : Core
-    Email         : cs21btech11018@iith.ac.in
+    Email         : cs21btech11018
     GithubURL     : 
 
   - image         : images/team/Harsh.jpg
     name          : Harsh Goyal
     designation   : Core
-    Email         : cs21btech11020@iith.ac.in
+    Email         : cs21btech11020
     GithubURL     : 
 
   - image         : images/team/Hiya.jpg
     name          : Hiya Mehta
     designation   : Core
-    Email         : ee21btech11024@iith.ac.in
+    Email         : ee21btech11024
     GithubURL     : 
   
   - image         : images/team/Kushagra.jpg
     name          : Kushagra Gupta
     designation   : Core
-    Email         : cs21btech11033@iith.ac.in
+    Email         : cs21btech11033
     GithubURL     : https://github.com/MistyRavager
   
   - image         : images/team/Rajiv.jpeg
     name          : Rajiv Chitale
     designation   : Core
-    Email         : cs21btech11051@iith.ac.in
+    Email         : cs21btech11051
     GithubURL     : https://github.com/RajivChitale
   
   - image         : images/team/Riya.jpeg
     name          : Riya Ann Easow
     designation   : Core
-    Email         : ee21btech11044@iith.ac.in
+    Email         : ee21btech11044
     GithubURL     : https://github.com/rae-t627
 
   - image         : images/team/Shambu.jpg
     name          : Shambu Kavir
     designation   : Core
-    Email         : cs20btech11045@iith.ac.in
+    Email         : cs20btech11045
     GithubURL     : https://github.com/Shambu-K
 
   - image         : images/team/Suryaansh.jpeg
     name          : Suryaansh Jain
     designation   : Core
-    Email         : cs21btech11057@iith.ac.in
+    Email         : cs21btech11057
     GithubURL     : 
 
   - image         : images/team/Taha.jpg
     name          : Taha Adeel Mohammed
     designation   : Core
-    Email         : cs20btech11052@iith.ac.in
+    Email         : cs20btech11052
     GithubURL     : https://github.com/Taha-Adeel
