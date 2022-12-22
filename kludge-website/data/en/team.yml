@@ -1,144 +1,107 @@
 enable  : true
-topTitle: TEAM MEMBER
+topTitle: KLUDGE 2022-23
 title   : Our Team
 subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!
 
 member  :
-  - image         : images/team/member-1.jpg
-    name          : Shawshank Redemption
+  - image         : images/team/Arsalan.jpeg
+    name          : Arsalan Sheikh
     designation   : Mentor
-    description   : >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
-    facebookURL   : https://www.facebook.com/
-    twitterURL    : https://twitter.com/
-    gplusURL      : https://plus.google.com/
-    dribbbleURL   : https://dribbble.com/
+    Email         : es19btech11025@iith.ac.in
+    GithubURL     : 
 
-  
-
-  - image         : images/team/member-3.jpg
-    name          : Remoni Rio
+  - image         : images/team/Angad.jpeg
+    name          : Gunangad Pal Singh Narula 
     designation   : Mentor
-    description   : >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
-    facebookURL   : https://www.facebook.com/
-    twitterURL    : https://twitter.com/
-    gplusURL      : https://plus.google.com/
-    dribbbleURL   : https://dribbble.com/
+    Email         : cs19btech11035@iith.ac.in
+    GithubURL     : 
 
   - image         : images/team/member-4.jpg
-    name          : Lawandeski Roma
-    designation   : Coordinator
-    description   : >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
-    facebookURL   : https://www.facebook.com/
-    twitterURL    : https://twitter.com/
-    gplusURL      : https://plus.google.com/
-    dribbbleURL   : https://dribbble.com/
-  - image         : images/team/member-1.jpg
-    name          : Shawshank Redemption
-    designation   : Coordinator
-    description   : >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
-    facebookURL   : https://www.facebook.com/
-    twitterURL    : https://twitter.com/
-    gplusURL      : https://plus.google.com/
-    dribbbleURL   : https://dribbble.com/
-  - image         : images/team/member-1.jpg
-    name          : Shawshank Redemption
-    designation   : Core
-    description   : >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
-    facebookURL   : https://www.facebook.com/
-    twitterURL    : https://twitter.com/
-    gplusURL      : https://plus.google.com/
-    dribbbleURL   : https://dribbble.com/
-
-  - image         : images/team/member-2.jpg
-    name          : Leo Departure
-    designation   : Core
-    description   : >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
-    facebookURL   : https://www.facebook.com/
-    twitterURL    : https://twitter.com/
-    gplusURL      : https://plus.google.com/
-    dribbbleURL   : https://dribbble.com/
-  - image         : images/team/member-2.jpg
-    name          : Leo Departure
-    designation   : Coordinator
-    description   : >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
-    facebookURL   : https://www.facebook.com/
-    twitterURL    : https://twitter.com/
-    gplusURL      : https://plus.google.com/
-    dribbbleURL   : https://dribbble.com/
-
-  - image         : images/team/member-3.jpg
-    name          : Remoni Rio
-    designation   : Core
-    description   : >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
-    facebookURL   : https://www.facebook.com/
-    twitterURL    : https://twitter.com/
-    gplusURL      : https://plus.google.com/
-    dribbbleURL   : https://dribbble.com/
-    
-  
-
-  - image         : images/team/member-3.jpg
-    name          : Remoni Rio
-    designation   : Core
-    description   : >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
-    facebookURL   : https://www.facebook.com/
-    twitterURL    : https://twitter.com/
-    gplusURL      : https://plus.google.com/
-    dribbbleURL   : https://dribbble.com/
-
-  - image         : images/team/member-4.jpg
-    name          : Lawandeski Roma
-    designation   : Core
-    description   : >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
-    facebookURL   : https://www.facebook.com/
-    twitterURL    : https://twitter.com/
-    gplusURL      : https://plus.google.com/
-    dribbbleURL   : https://dribbble.com/
-  - image         : images/team/member-1.jpg
-    name          : Shawshank Redemption
-    designation   : Core
-    description   : >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
-    facebookURL   : https://www.facebook.com/
-    twitterURL    : https://twitter.com/
-    gplusURL      : https://plus.google.com/
-    dribbbleURL   : https://dribbble.com/
-
-  - image         : images/team/member-2.jpg
-    name          : Leo Departure
-    designation   : Core
-    description   : >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
-    facebookURL   : https://www.facebook.com/
-    twitterURL    : https://twitter.com/
-    gplusURL      : https://plus.google.com/
-    dribbbleURL   : https://dribbble.com/
-
-  - image         : images/team/member-3.jpg
-    name          : Remoni Rio
-    designation   : Core
-    description   : >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
-    facebookURL   : https://www.facebook.com/
-    twitterURL    : https://twitter.com/
-    gplusURL      : https://plus.google.com/
-    dribbbleURL   : https://dribbble.com/
-  - image         : images/team/member-2.jpg
-    name          : Leo Departure
+    name          : Someone
     designation   : Mentor
-    description   : >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
-    facebookURL   : https://www.facebook.com/
-    twitterURL    : https://twitter.com/
-    gplusURL      : https://plus.google.com/
-    dribbbleURL   : https://dribbble.com/
+    Email         : 
+    GithubURL     : 
+
+  - image         : images/team/Syed.jpeg
+    name          : Syed Saqeeb Habeeb
+    designation   : Coordinator
+    Email         : bm20btech11015@iith.ac.in
+    GithubURL     : https://github.com/theCapedCrusader7
+
+  - image         : images/team/Deepak.jpg
+    name          : VKS Deepak Reddy
+    designation   : Coordinator
+    Email         : ma20btech11019@iith.ac.in
+    GithubURL     : https://github.com/DeepakReddyVelagala
+  
+  - image         : images/team/Abhinav.jpg
+    name          : Abhinav Yadav
+    designation   : Core
+    Email         : cs21btech11002@iith.ac.in
+    GithubURL     : 
+
+  - image         : images/team/Aditya.jpg
+    name          : Aditya Unal
+    designation   : Core
+    Email         : bm21btech11003@iith.ac.in
+    GithubURL     : 
+
+  - image         : images/team/Chirag.jpg
+    name          : Chirag Mehta
+    designation   : Core
+    Email         : ai20btech11006@iith.ac.in
+    GithubURL     : https://github.com/cmaspi
+
+  - image         : images/team/Gautam.jpeg
+    name          : Gautam Singh
+    designation   : Core
+    Email         : cs21btech11018@iith.ac.in
+    GithubURL     : 
+
+  - image         : images/team/Harsh.jpg
+    name          : Harsh Goyal
+    designation   : Core
+    Email         : cs21btech11020@iith.ac.in
+    GithubURL     : 
+
+  - image         : images/team/Hiya.jpg
+    name          : Hiya Mehta
+    designation   : Core
+    Email         : ee21btech11024@iith.ac.in
+    GithubURL     : 
+  
+  - image         : images/team/Kushagra.jpg
+    name          : Kushagra Gupta
+    designation   : Core
+    Email         : cs21btech11033@iith.ac.in
+    GithubURL     : https://github.com/MistyRavager
+  
+  - image         : images/team/Rajiv.jpeg
+    name          : Rajiv Chitale
+    designation   : Core
+    Email         : cs21btech11051@iith.ac.in
+    GithubURL     : https://github.com/RajivChitale
+  
+  - image         : images/team/Riya.jpeg
+    name          : Riya Ann Easow
+    designation   : Core
+    Email         : ee21btech11044@iith.ac.in
+    GithubURL     : https://github.com/rae-t627
+
+  - image         : images/team/Shambu.jpg
+    name          : Shambu Kavir
+    designation   : Core
+    Email         : cs20btech11045@iith.ac.in
+    GithubURL     : https://github.com/Shambu-K
+
+  - image         : images/team/Suryaansh.jpeg
+    name          : Suryaansh Jain
+    designation   : Core
+    Email         : cs21btech11057@iith.ac.in
+    GithubURL     : 
+
+  - image         : images/team/Taha.jpg
+    name          : Taha Adeel Mohammed
+    designation   : Core
+    Email         : cs20btech11052@iith.ac.in
+    GithubURL     : https://github.com/Taha-Adeel

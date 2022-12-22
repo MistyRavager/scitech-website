@@ -24,7 +24,7 @@
                         <div class="team-member text-center">
                             <div class="member-outline">
                                 <div class="member-photo">
-                                    <img class="img-fluid" src="{{.image | absURL }}" alt="team people">
+                                    <img  src="{{.image | absURL }}" alt="team people" height="350">
                                 </div>
                             </div>
                             {{ "<!-- member name & designation -->" | safeHTML }}
@@ -32,31 +32,10 @@
                                 <h3>{{ .name }}</h3>
                                 <span>{{ .designation }}</span>
                                 <ul class="list-inline">
-                                    {{ with .facebookURL }}
+                                    {{ with .GithubURL }}
                                     <li class="list-inline-item">
                                         <a href="{{.}}" id ="list-inline-icon">
-                                            <i class="ion-social-facebook"></i>
-                                        </a>
-                                    </li>
-                                    {{ end }}
-                                    {{ with .twitterURL }}
-                                    <li class="list-inline-item">
-                                        <a href="{{.}}">
-                                            <i class="tf-ion-social-instagram" style="color: white;"></i>
-                                        </a>
-                                    </li>
-                                    {{ end }}
-                                    {{ with .gplusURL }}
-                                    <li class="list-inline-item">
-                                        <a href="{{.}}">
-                                            <i class="tf-ion-social-google-outline"></i>
-                                        </a>
-                                    </li>
-                                    {{ end }}
-                                    {{ with .dribbbleURL }}
-                                    <li class="list-inline-item">
-                                        <a href="{{.}}">
-                                            <i class="tf-ion-social-dribbble"></i>
+                                            <i class="ion-social-github"></i>
                                         </a>
                                     </li>
                                     {{ end }}
@@ -76,7 +55,7 @@
                         <div class="team-member text-center">
                             <div class="member-outline">
                                 <div class="member-photo">
-                                    <img class="img-fluid" src="{{.image | absURL }}" alt="team people" >
+                                    <img  src="{{.image | absURL }}" alt="team people" height="250" >
                                 </div>
                             </div>
                             {{ "<!-- member name & designation -->" | safeHTML }}
@@ -84,31 +63,10 @@
                                 <h3>{{ .name }}</h3>
                                 <span>{{ .designation }}</span>
                                 <ul class="list-inline">
-                                    {{ with .facebookURL }}
+                                    {{ with .GithubURL }}
                                     <li class="list-inline-item">
                                         <a href="{{.}}" id ="list-inline-icon">
-                                            <i class="ion-social-facebook"></i>
-                                        </a>
-                                    </li>
-                                    {{ end }}
-                                    {{ with .twitterURL }}
-                                    <li class="list-inline-item">
-                                        <a href="{{.}}">
-                                            <i class="tf-ion-social-instagram" style="color: white;"></i>
-                                        </a>
-                                    </li>
-                                    {{ end }}
-                                    {{ with .gplusURL }}
-                                    <li class="list-inline-item">
-                                        <a href="{{.}}">
-                                            <i class="tf-ion-social-google-outline"></i>
-                                        </a>
-                                    </li>
-                                    {{ end }}
-                                    {{ with .dribbbleURL }}
-                                    <li class="list-inline-item">
-                                        <a href="{{.}}">
-                                            <i class="tf-ion-social-dribbble"></i>
+                                            <i class="ion-social-github"></i>
                                         </a>
                                     </li>
                                     {{ end }}
@@ -128,7 +86,7 @@
                         <div class="team-member text-center">
                             <div class="member-outline">
                                 <div class="member-photo">
-                                    <img class="img-fluid" src="{{.image | absURL }}" alt="team people">
+                                    <img  src="{{.image | absURL }}" alt="team people" height="200">
                                 </div>
                             </div>
                             {{ "<!-- member name & designation -->" | safeHTML }}
@@ -136,81 +94,10 @@
                                 <h3>{{ .name }}</h3>
                                 <span>{{ .designation }}</span>
                                 <ul class="list-inline">
-                                    {{ with .facebookURL }}
+                                    {{ with .GithubURL }}
                                     <li class="list-inline-item">
                                         <a href="{{.}}" id ="list-inline-icon">
-                                            <i class="ion-social-facebook"></i>
-                                        </a>
-                                    </li>
-                                    {{ end }}
-                                    {{ with .twitterURL }}
-                                    <li class="list-inline-item">
-                                        <a href="{{.}}">
-                                            <i class="tf-ion-social-instagram" style="color: white;"></i>
-                                        </a>
-                                    </li>
-                                    {{ end }}
-                                    {{ with .gplusURL }}
-                                    <li class="list-inline-item">
-                                        <a href="{{.}}">
-                                            <i class="tf-ion-social-google-outline"></i>
-                                        </a>
-                                    </li>
-                                    {{ end }}
-                                    {{ with .dribbbleURL }}
-                                    <li class="list-inline-item">
-                                        <a href="{{.}}">
-                                            <i class="tf-ion-social-dribbble"></i>
-                                        </a>
-                                    </li>
-                                    {{ end }}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    {{ "<!-- end team member -->" | safeHTML }}
-                    {{ end }}
-                {{ end }}
-                {{ range .member }}
-                {{ if eq .designation "Core"}}
-                    {{ "<!-- team member -->" | safeHTML }}
-                    <div class="col-12 col-md-3 col-sm-4">
-                        <div class="team-member text-center">
-                            <div class="member-outline">
-                                <div class="member-photo">
-                                    <img class="img-fluid" src="{{.image | absURL }}" alt="team people">
-                                </div>
-                            </div>
-                            {{ "<!-- member name & designation -->" | safeHTML }}
-                            <div class="member-content">
-                                <h3>{{ .name }}</h3>
-                                <span>{{ .designation }}</span>
-                                <ul class="list-inline">
-                                    {{ with .facebookURL }}
-                                    <li class="list-inline-item">
-                                        <a href="{{.}}" id ="list-inline-icon">
-                                            <i class="ion-social-facebook"></i>
-                                        </a>
-                                    </li>
-                                    {{ end }}
-                                    {{ with .twitterURL }}
-                                    <li class="list-inline-item">
-                                        <a href="{{.}}">
-                                            <i class="tf-ion-social-instagram" style="color: white;"></i>
-                                        </a>
-                                    </li>
-                                    {{ end }}
-                                    {{ with .gplusURL }}
-                                    <li class="list-inline-item">
-                                        <a href="{{.}}">
-                                            <i class="tf-ion-social-google-outline"></i>
-                                        </a>
-                                    </li>
-                                    {{ end }}
-                                    {{ with .dribbbleURL }}
-                                    <li class="list-inline-item">
-                                        <a href="{{.}}">
-                                            <i class="tf-ion-social-dribbble"></i>
+                                            <i class="ion-social-github"></i>
                                         </a>
                                     </li>
                                     {{ end }}
