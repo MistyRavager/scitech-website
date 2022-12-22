@@ -7,101 +7,139 @@ member  :
   - image         : images/team/Arsalan.jpeg
     name          : Arsalan Sheikh
     designation   : Mentor
-    Email         : es19btech11025
-    GithubURL     : 
+    Roll          : es19btech11025
+    GithubURL     : http://github.com/cybars69
+    LinkedInURL   : https://www.linkedin.com/in/arsalan-sheikh-7b3191194
 
   - image         : images/team/Angad.jpeg
     name          : Gunangad Pal Singh Narula 
     designation   : Mentor
-    Email         : cs19btech11035
-    GithubURL     : 
+    Roll          : cs19btech11035
+    GithubURL     : https://github.com/angad11121
+    LinkedInURL   : https://www.linkedin.com/in/angad11121
 
-  - image         : images/team/member-1.jpg
-    name          : Someone
+  - image         : images/team/Satvik.jpg
+    name          : Satvik Padhiyar
     designation   : Mentor
-    Email         : 
-    GithubURL     : 
+    Roll          : cs21mtech14011
+    GithubURL     : https://github.com/satvikpadhiyar/
+    LinkedInURL   : https://www.linkedin.com/in/satvikpadhiyar/
 
   - image         : images/team/Syed.jpeg
     name          : Syed Saqeeb Habeeb
     designation   : Coordinator
-    Email         : bm20btech11015
+    Roll          : bm20btech11015
     GithubURL     : https://github.com/theCapedCrusader7
+    LinkedInURL   : https://www.linkedin.com/in/syed-saqib-habeeb-099905222/
 
   - image         : images/team/Deepak.jpg
     name          : VKS Deepak Reddy
     designation   : Coordinator
-    Email         : ma20btech11019
+    Roll          : ma20btech11019
     GithubURL     : https://github.com/DeepakReddyVelagala
+    LinkedInURL   :
   
   - image         : images/team/Abhinav.jpg
     name          : Abhinav Yadav
     designation   : Core
-    Email         : cs21btech11002
-    GithubURL     : 
+    Roll          : cs21btech11002
+    GithubURL     : https://github.com/AbhinavYdv
+    LinkedInURL   :
 
   - image         : images/team/Aditya.jpg
     name          : Aditya Unal
     designation   : Core
-    Email         : bm21btech11003
+    Roll          : bm21btech11003
     GithubURL     : 
+    LinkedInURL   :
 
   - image         : images/team/Chirag.jpg
     name          : Chirag Mehta
     designation   : Core
-    Email         : ai20btech11006
+    Roll          : ai20btech11006
     GithubURL     : https://github.com/cmaspi
+    LinkedInURL   : https://www.linkedin.com/in/chirag-mehta-876418164
 
   - image         : images/team/Gautam.jpeg
     name          : Gautam Singh
     designation   : Core
-    Email         : cs21btech11018
-    GithubURL     : 
+    Roll          : cs21btech11018
+    GithubURL     : https://github.com/goats-9
+    LinkedInURL   : https://www.linkedin.com/in/gautam-singh-046921242/
 
   - image         : images/team/Harsh.jpg
     name          : Harsh Goyal
     designation   : Core
-    Email         : cs21btech11020
-    GithubURL     : 
+    Roll          : cs21btech11020
+    GithubURL     : https://github.com/galaxion-tech
+    LinkedInURL   : https://www.linkedin.com/in/harsh-goyal-281796222/
 
   - image         : images/team/Hiya.jpg
     name          : Hiya Mehta
     designation   : Core
-    Email         : ee21btech11024
-    GithubURL     : 
-  
+    Roll          : ee21btech11024
+    GithubURL     :
+    LinkedInURL   :
+
+  - image         : images/team/Suryaansh.jpeg
+    name          : Kartheek Sriram Tammana
+    designation   : Core
+    Roll          : cs21btech11028
+    GithubURL     : https://github.com/kst164
+    LinkedInURL   :
+
   - image         : images/team/Kushagra.jpg
     name          : Kushagra Gupta
     designation   : Core
-    Email         : cs21btech11033
+    Roll          : cs21btech11033
     GithubURL     : https://github.com/MistyRavager
-  
+    LinkedInURL   : https://www.linkedin.com/in/kushagra-gupta-b3b45425b/
+
+  - image         : images/team/Rajiv.jpeg
+    name          : Manas Bhargava
+    designation   : Core
+    Roll          : ch21btech11019 
+    GithubURL     : 
+    LinkedInURL   : https://www.linkedin.com/in/manas-bhargava-44b156243/
+
   - image         : images/team/Rajiv.jpeg
     name          : Rajiv Chitale
     designation   : Core
-    Email         : cs21btech11051
+    Roll          : cs21btech11051
     GithubURL     : https://github.com/RajivChitale
-  
+    LinkedInURL   : https://www.linkedin.com/in/rajiv-chitale-b61107243
+
   - image         : images/team/Riya.jpeg
     name          : Riya Ann Easow
     designation   : Core
-    Email         : ee21btech11044
+    Roll          : ee21btech11044
     GithubURL     : https://github.com/rae-t627
+    LinkedInURL   : https://www.linkedin.com/in/raet627/
+
+  - image         : images/team/Suryaansh.jpeg
+    name          : Rutv Kocheta
+    designation   : Core
+    Roll          : ma21btech11014
+    GithubURL     : https://github.com/kdebeast17
+    LinkedInURL   :
 
   - image         : images/team/Shambu.jpg
     name          : Shambu Kavir
     designation   : Core
-    Email         : cs20btech11045
+    Roll         : cs20btech11045
     GithubURL     : https://github.com/Shambu-K
-
+    LinkedInURL   : https://www.linkedin.com/in/shambhu-kavir-07a09223a/
+    
   - image         : images/team/Suryaansh.jpeg
     name          : Suryaansh Jain
     designation   : Core
-    Email         : cs21btech11057
+    Roll         : cs21btech11057
     GithubURL     : 
+    LinkedInURL   :
 
   - image         : images/team/Taha.jpg
     name          : Taha Adeel Mohammed
     designation   : Core
-    Email         : cs20btech11052
+    Roll          : cs20btech11052
     GithubURL     : https://github.com/Taha-Adeel
+    LinkedInURL   : https://www.linkedin.com/in/taha-adeel-mohammed-81bbb4239/

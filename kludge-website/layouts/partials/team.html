@@ -31,7 +31,7 @@
                             <div class="member-content">
                                 <h3>{{ .name }}</h3>
                                 <span>{{ .designation }}</span>
-                                {{ with .Email}}
+                                {{ with .Roll}}
                                 <h6>{{.}}</h6>
                                 {{ end }}
                                 <ul class="list-inline">
@@ -42,10 +42,10 @@
                                         </a>
                                     </li>
                                     {{ end }}
-                                    {{ with .Email}}
+                                    {{ with .LinkedInURL }}
                                     <li class="list-inline-item">
                                         <a href="{{.}}" id ="list-inline-icon">
-                                            <i class="ion-social-gmail"></i>
+                                            <i class="ion-social-linkedin"></i>
                                         </a>
                                     </li>
                                     {{ end }}
@@ -72,14 +72,21 @@
                             <div class="member-content">
                                 <h3>{{ .name }}</h3>
                                 <span>{{ .designation }}</span>
-                                {{ with .Email}}
+                                {{ with .Roll}}
                                 <h6>{{.}}</h6>
                                 {{ end }}
-                                {{ with .GithubURL }}
                                 <ul class="list-inline">
+                                    {{ with .GithubURL }}
                                     <li class="list-inline-item">
                                         <a href="{{.}}" id ="list-inline-icon">
                                             <i class="ion-social-github"></i>
+                                        </a>
+                                    </li>
+                                    {{ end }}
+                                    {{ with .LinkedInURL }}
+                                    <li class="list-inline-item">
+                                        <a href="{{.}}" id ="list-inline-icon">
+                                            <i class="ion-social-linkedin"></i>
                                         </a>
                                     </li>
                                     {{ end }}
@@ -106,7 +113,7 @@
                             <div class="member-content">
                                 <h3>{{ .name }}</h3>
                                 <span>{{ .designation }}</span>
-                                {{ with .Email}}
+                                {{ with .Roll}}
                                 <h6>{{.}}</h6>
                                 {{ end }}
                                 <ul class="list-inline">
@@ -114,6 +121,13 @@
                                     <li class="list-inline-item">
                                         <a href="{{.}}" id ="list-inline-icon">
                                             <i class="ion-social-github"></i>
+                                        </a>
+                                    </li>
+                                    {{ end }}
+                                    {{ with .LinkedInURL }}
+                                    <li class="list-inline-item">
+                                        <a href="{{.}}" id ="list-inline-icon">
+                                            <i class="ion-social-linkedin"></i>
                                         </a>
                                     </li>
                                     {{ end }}
