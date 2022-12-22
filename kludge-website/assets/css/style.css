@@ -175,9 +175,8 @@ a:focus, a:hover {
   border-radius: 2px;
   
 }
-
 .btn-main:hover, .btn-main-sm:hover {
-  color: rgb(255, 255, 255);
+  color: #32f035;
 }
 
 .btn-main-sm {
@@ -1656,9 +1655,10 @@ a:focus, a:hover {
   Latest Posts
 ==================================================================*/
 .post-item {
-  background: rgb(93, 80, 80);
-  height: 550px;
+  background: rgb(0, 0, 0);
+  /* height: 550px; */
   margin-bottom: 20px;
+  box-shadow: 0 0 20px rgba(255, 248, 248, 0.3);
 }
 
 /* .post-item .post-thumb {
@@ -1693,7 +1693,7 @@ a:focus, a:hover {
 
 .post-item .post-content p {
   color: #ffffff;
-  margin: 10px 0;
+  margin: 10px 10px;
 }
 
 .post-item .btn-main, .post-item .btn-main-sm {
