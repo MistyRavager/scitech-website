@@ -18,7 +18,7 @@
             </div>
             <div class="row justify-content-center">
                 {{ range .member }}
-                {{ if eq .designation "Mentor"}}
+                {{ if eq .designation "Mentor" }}
                     {{ "<!-- team member -->" | safeHTML }}
                     <div class="col-12 col-lg-6 col-md-12 col-sm-12">
                         <div class="team-member text-center">
@@ -32,7 +32,7 @@
                                 <h3>{{ .name }}</h3>
                                 <span>{{ .designation }}</span>
                                 {{ with .Roll}}
-                                <h6>{{.}}</h6>
+                                <h6 style="color:grey">{{.}}</h6>
                                 {{ end }}
                                 <ul class="list-inline">
                                     {{ with .GithubURL }}
@@ -73,7 +73,7 @@
                                 <h3>{{ .name }}</h3>
                                 <span>{{ .designation }}</span>
                                 {{ with .Roll}}
-                                <h6>{{.}}</h6>
+                                <h6 style="color:grey">{{.}}</h6>
                                 {{ end }}
                                 <ul class="list-inline">
                                     {{ with .GithubURL }}
@@ -114,7 +114,7 @@
                                 <h3>{{ .name }}</h3>
                                 <span>{{ .designation }}</span>
                                 {{ with .Roll}}
-                                <h6>{{.}}</h6>
+                                <h6 style="color:grey">{{.}}</h6>
                                 {{ end }}
                                 <ul class="list-inline">
                                     {{ with .GithubURL }}

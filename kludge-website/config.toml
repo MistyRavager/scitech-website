@@ -45,7 +45,7 @@ menufixed = false
 footerDescription = "Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus cursus commodo, tortor mauris sed posuere."
 footerQuicklinkTitle = "Quicklinks"
 footerAboutTitle = "About"
-
+footerContactTitle = "Contact Us"
 
 # cookies
 [params.cookies]

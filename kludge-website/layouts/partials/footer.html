@@ -3,21 +3,30 @@
     <div class="top-footer">
         <div class="container">
             <div class="row">
-                <div class="col-sm-8 col-md-8 col-lg-8">
+                <div class="col-sm-5 col-md-5 col-lg-5">
                     <h3>{{ .Site.Params.footerAboutTitle }}</h3>
                     {{ with .Site.Params.footerDescription }}<p>{{ . }}</p>{{ end }}
                 </div>
-                <!-- <div class="col-sm-4 col-md-4 col-lg-4">
-                    <h3>{{ .Site.Params.footerServiceTitle }}</h3>
-                    <ul>
-                        {{ range .Site.Menus.service }}
-                        <li>
-                            <a href="{{ .URL | absLangURL }}">{{ i18n .Name }}</a>
-                        </li>
-                        {{ end }}
-                    </ul>
-                </div> -->
                 <div class="col-sm-4 col-md-4 col-lg-4">
+                    <h3>{{ .Site.Params.footerContactTitle }}</h3>
+                    {{ $data := index .Site.Data .Site.Language.Lang }}
+                    {{ with $data.team }}
+                        {{ if .enable }}
+                            <ul>    
+                                {{ range .member }}
+                                    {{ if .Phone }}
+                                    <li style="margin: 15px 0 0 0 ;">{{.name}} :</li>
+                                        <ul style="color:grey">
+                                            <li>{{.Phone}}</li>
+                                            <li>{{.Roll}}@iith.ac.in</li>
+                                        </ul>
+                                    {{ end }}
+                                {{ end }}
+                            </ul>
+                        {{ end }}
+                    {{ end }}
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3">
                     <h3>{{ .Site.Params.footerQuicklinkTitle }}</h3>
                     <ul>
                         {{ range .Site.Menus.quicklink }}
@@ -27,15 +36,6 @@
                         {{ end }}
                     </ul>
                 </div>
-                <!-- <div class="col-sm-4 col-md-4 col-lg-4">
-                    <h3>{{ .Site.Params.footerSubscribeTitle }}</h3>
-                    <form class="subscribe-form">
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                        </div>
-                        <button type="submit" class="btn btn-main-sm">Subscribe Now</button>
-                    </form>
-                </div> -->
             </div>
         </div>
     </div>
