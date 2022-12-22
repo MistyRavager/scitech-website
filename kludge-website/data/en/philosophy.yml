@@ -1,25 +1,37 @@
 enable    : true
-topTitle   : LITTLE MORE BRIEF
+topTitle   : Why join Kludge?
 title     : About Us
-subtitle  : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!
+# subtitle  : It's fun, problem hacking and making problems=]
 tabItem   :
   - id        : philosophy
-    title     : Our Philosophy
-    heading   : We Create Designs and technology
-    content   : >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat voluptate molestias, quaerat quo natus dolor harum voluptatibus modi dicta ducimus. <br> <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quae officia earum dolore est quaerat cupiditate voluptatibus id, magni alias veniam voluptate, libero explicabo, distinctio atque!
-    image     : images/company/company-image.jpg
+    title     : Why Kludge
+    heading   : Our philosophy
+    content   : |
+      <ol style="text-align:left">
+      <li style="margin: 15px 0;">With increase of our time in cyberspace, information security is an essential skill, not only for Engineers but everyone!</li>
+      <li style="margin: 15px 0;">Network Security is the most important domain of web architecture in today's world, and with the advent of WEB3.0 and the blockchain combined with decentralization (DAPP's and like), it has become more important and relevant than ever before.
+      </li>
+      </ol>
+    image     : images/company/Philosophy.jpg
 
   - id        : mission
     title     : Mission
     heading   : Our Mission
-    content   : >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat voluptate molestias, quaerat quo natus dolor harum voluptatibus modi dicta ducimus. <br> <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quae officia earum dolore est quaerat cupiditate voluptatibus id, magni alias veniam voluptate, libero explicabo, distinctio atque!
-    image     : images/company/company-image-2.jpg
+    content   : |
+      <ol style="text-align:left">
+      <li style="margin: 15px 0;">Try to make IITH Society more infosec (Information security) aware.</li>
+      <li style="margin: 15px 0;">Help in making a career in networking and/or security engineering.</li>
+      <li style="margin: 15px 0;">Help in preparing for various infosec events like bug bounty programs which have prize money ranging from $500 to anywhere upto $350,000.</li>
+      </ol>
+    image     : images/company/Mission.jpg
 
-  - id        : vision
-    title     : Vision
-    heading   : Our Vision
-    content   : >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat voluptate molestias, quaerat quo natus dolor harum voluptatibus modi dicta ducimus. <br> <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quae officia earum dolore est quaerat cupiditate voluptatibus id, magni alias veniam voluptate, libero explicabo, distinctio atque!
-    image     : images/company/company-image-3.jpg
+  - id        : plan
+    title     : Plan
+    heading   : Our Plan
+    content   : |
+      <ol style="text-align:left">
+      <li style="margin: 15px 0;">Primarily research on and try to learn about different topics on security and networks.</li>
+      <li style="margin: 15px 0;">Reconstruct vulnerable applications and study various Hacking techniques.</li>
+      <li style="margin: 15px 0;">Participate in and Organise CTFs and other cybersecurity related competitions.</li>
+      </ol>
+    image     : images/company/Plan.png

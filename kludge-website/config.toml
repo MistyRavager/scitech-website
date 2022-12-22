@@ -114,18 +114,18 @@ weight = 2
 name = "blog"
 url = "blog/"
 weight = 3
-[[menu.nav]]
-name = "service"
-url = "service/"
-weight = 4
-[[menu.nav]]
+# [[menu.nav]]
+# name = "service"
+# url = "service/"
+# weight = 4
+# [[menu.nav]]
 # name = "portfolio"
 # url = "portfolio/"
 # weight = 4
 [[menu.nav]]
 name = "contact"
 url = "contact/"
-weight = 5
+weight = 4
 
 # Footer Service Menu
 [[menu.service]]
@@ -142,10 +142,10 @@ url = "service/"
 weight = 3
 
 # Footer Quick links Menu
-[[menu.quicklink]]
-name = "partners"
-url = "about/"
-weight = 1
+# [[menu.quicklink]]
+# name = "partners"
+# url = "about/"
+# weight = 1
 [[menu.quicklink]]
 name = "blog"
 url = "blog/"
