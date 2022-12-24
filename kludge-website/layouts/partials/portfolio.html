@@ -34,15 +34,19 @@
                 {{ range .item }}
                     <div class="col-6 col-md-4 padding-0 filtr-item" data-category="{{.category}}">
                         <div class="portfolio-block">
-                            <img class="img-fluid" src="{{ .image | absURL }}" alt="portfolio-image">
+                            <a href="{{ .url  }}">
+                                <img class="img-fluid" id="session-img" src="{{ .image | absURL }}" alt="portfolio-image">
+                            </a>
                             <div class="caption">
-                                <a class="search-icon" href="{{ .image | absURL }}" data-lightbox="image-1">
+                                <!-- <a class="search-icon" href="{{ .image | absURL }}" data-lightbox="image-1">
                                     <i class="tf-ion-ios-search-strong"></i>
-                                </a>
-                                <a href="{{ .url }}">abcd</a>
+                                </a> -->
                                 <h4>
-                                    <a href="">{{ .title }}</a>
+                                    <a>{{ .title }}</a>
                                 </h4>
+                                <a class="btn btn-main"  href="{{ .url }}" id = "session-link">
+                                    READ MORE
+                                </a>
                             </div>
                         </div>
                     </div>

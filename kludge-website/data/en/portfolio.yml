@@ -22,22 +22,29 @@ item   :
     category  : photography
     url : are-you-doing-the-right-way
 
+  - title : AirBnB Postcard
+    image : images/company/Mission.jpg
+    category  : photography
+    url : are-you-doing-the-right-way
+
   - title : D Design
-    image : images/portfolio/portfolio-2.jpg
+    image : images/company/Plan.png
     category  : ios, design
+    url : are-you-doing-the-right-way
 
   - title : Xbox 360
-    image : images/portfolio/portfolio-3.jpg
+    image : images/company/Philosophy.jpg
     category  : photography, development
+    url : are-you-doing-the-right-way
 
   - title : Ballon Card
-    image : images/portfolio/portfolio-4.jpg
+    image : images/company/Mission.jpg
     category  : ios
 
   - title : Ready Toons
-    image : images/portfolio/portfolio-5.jpg
+    image : images/company/Philosophy.jpg
     category  : design
 
   - title : Illustration
-    image : images/portfolio/portfolio-6.jpg
+    image : images/company/Mission.jpg
     category  : development
