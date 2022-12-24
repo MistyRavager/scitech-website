@@ -122,6 +122,11 @@ weight = 4
 name = "sessions"
 url = "sessions/"
 weight = 5
+[[menu.nav]]
+name = "archive"
+url = "archives/"
+weight = 5
+
 # [[menu.nav]]
 # name = "service"
 # url = "service/"

@@ -12,7 +12,8 @@ other = "Contact"
 other = "Projects"
 [sessions]
 other = "Sessions"
-
+[archive]
+other = "Archive"
 
 
 
