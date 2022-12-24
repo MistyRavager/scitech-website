@@ -707,7 +707,7 @@ a:focus, a:hover {
 }
 
 .hero-area {
-  padding: 150px 150px 150px;
+  margin-top: 80px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1658,6 +1658,7 @@ a:focus, a:hover {
 .post-item {
   background: rgb(0, 0, 0);
   /* height: 550px; */
+  text-align: center;
   margin-bottom: 20px;
   box-shadow: 0 0 20px rgba(255, 248, 248, 0.3);
 }

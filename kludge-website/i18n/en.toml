@@ -8,6 +8,13 @@ other = "Portfolio"
 other = "Blog"
 [contact]
 other = "Contact"
+[projects]
+other = "Projects"
+[sessions]
+other = "Sessions"
+
+
+
 
 [graphicdesign]
 other = "Graphic Design"

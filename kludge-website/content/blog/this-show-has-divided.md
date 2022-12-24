@@ -1,7 +1,7 @@
 ---
 title: "This Show Has Divided"
 date: 2018-07-08T12:18:46+06:00
-image: images/blog/post-3.jpg
+image: images/company/Philosophy.jpg
 author: Theon Greyjoy
 description: "This is meta description"
 ---

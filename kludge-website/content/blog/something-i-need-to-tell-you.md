@@ -1,7 +1,7 @@
 ---
 title: Something I Need to Tell You
 date: 2018-07-07T17:04:02+06:00
-image: images/blog/post-2.jpg
+image: images/company/Philosophy.jpg
 author: Jhonathan Ive
 description: "This is meta description"
 ---
