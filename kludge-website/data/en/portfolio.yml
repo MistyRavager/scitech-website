@@ -1,6 +1,6 @@
 enable  : true
-topTitle: RECENT WORK
-title   : WORK SHOWCASE
+topTitle: RECENT SESSIONS
+title   : SESSION SHOWCASE
 subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!
 
 filtermenu :
@@ -20,6 +20,7 @@ item   :
   - title : AirBnB Postcard
     image : images/portfolio/portfolio-1.jpg
     category  : photography
+    url : are-you-doing-the-right-way
 
   - title : D Design
     image : images/portfolio/portfolio-2.jpg
