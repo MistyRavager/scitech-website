@@ -127,14 +127,6 @@ name = "archive"
 url = "archives/"
 weight = 5
 
-# [[menu.nav]]
-# name = "service"
-# url = "service/"
-# weight = 4
-# [[menu.nav]]
-# name = "portfolio"
-# url = "portfolio/"
-# weight = 4
 [[menu.nav]]
 name = "contact"
 url = "contact/"
@@ -155,19 +147,11 @@ url = "service/"
 weight = 3
 
 # Footer Quick links Menu
-# [[menu.quicklink]]
-# name = "partners"
-# url = "about/"
-# weight = 1
 [[menu.quicklink]]
-name = "blog"
-url = "blog/"
+name = "discord"
+url = "https://discord.gg/fPmwXpcSrx"
+weight = 1
+[[menu.quicklink]]
+name = "instagram"
+url = "https://www.instagram.com/kludge.iith/"
 weight = 2
-[[menu.quicklink]]
-name = "about"
-url = "about/"
-weight = 3
-[[menu.quicklink]]
-name = "faqs"
-url = "about/"
-weight = 4

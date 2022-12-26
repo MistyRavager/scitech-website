@@ -16,7 +16,7 @@
                                 {{ range .member }}
                                     {{ if .Phone }}
                                     <li style="margin: 15px 0 0 0 ;">{{.name}} :</li>
-                                        <ul style="color:grey">
+                                        <ul style="color:grey; font-size: small;">
                                             <li>{{.Phone}}</li>
                                             <li>{{.Roll}}@iith.ac.in</li>
                                         </ul>
@@ -31,7 +31,7 @@
                     <ul>
                         {{ range .Site.Menus.quicklink }}
                         <li>
-                            <a href="{{ .URL | absLangURL }}">{{ i18n .Name }}</a>
+                            <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
                         </li>
                         {{ end }}
                     </ul>
