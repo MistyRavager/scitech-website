@@ -2,7 +2,7 @@
 {{ with $data.portfolio }}
     {{ if .enable }}
     {{ "<!-- Start Portfolio Section -->" | safeHTML }}
-    <section class="portfolio section" id="portfolio">
+    <section class="portfolio-section" id="portfolio">
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
@@ -38,9 +38,6 @@
                                 <img class="img-fluid" id="session-img" src="{{ .image | absURL }}" alt="portfolio-image">
                             </a>
                             <div class="caption">
-                                <!-- <a class="search-icon" href="{{ .image | absURL }}" data-lightbox="image-1">
-                                    <i class="tf-ion-ios-search-strong"></i>
-                                </a> -->
                                 <h4>
                                     <a>{{ .title }}</a>
                                 </h4>

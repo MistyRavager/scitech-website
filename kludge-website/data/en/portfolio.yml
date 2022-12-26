@@ -17,12 +17,12 @@ filtermenu :
     category  : design
 
 item   :
-  - title : AirBnB Postcard
+  - title : Session
     image : images/portfolio/portfolio-1.jpg
     category  : photography
     url : are-you-doing-the-right-way
 
-  - title : AirBnB Postcard
+  - title : session
     image : images/company/Mission.jpg
     category  : photography
     url : are-you-doing-the-right-way
@@ -48,3 +48,8 @@ item   :
   - title : Illustration
     image : images/company/Mission.jpg
     category  : development
+
+  - title : session
+    image : images/portfolio/portfolio-1.jpg
+    category  : photography
+    url : are-you-doing-the-right-way

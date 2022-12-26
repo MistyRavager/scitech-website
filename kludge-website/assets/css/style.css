@@ -1972,7 +1972,10 @@ a:focus, a:hover {
 #session-link{
   background-color: black;
 }
-/* #session-img{
+#session-img{
   width: 512px;
   height: 341px;
-} */
+}
+.portfolio-section{
+  padding-bottom: 50px;
+}
