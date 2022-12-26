@@ -1,0 +1,59 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ with $data.archives}}
+    {{ if .enable }}
+    {{ "<!-- Start Portfolio Section -->" | safeHTML }}
+    <section class="portfolio-section" id="portfolio">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="title text-center">
+                        {{ with .topTitle }}
+                            <h4>{{ . }}</h4>
+                        {{ end }}
+                        {{ with .title }}
+                            <h2>{{ . }}</h2>
+                            <span class="border"></span>
+                        {{ end }}
+                        {{ with .subtitle }}
+                            <p>{{ . }}</p>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="portfolio-filter">
+                        <button class="filtr-control active" type="button" data-filter="all">All</button>
+                        {{ range .filtermenu }}
+                        <button class="filtr-control" type="button" data-filter="{{ .category }}">{{ .name }}</button>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+            <div class="row filtr-container">
+                {{ range .item }}
+                    <div class="col-6 col-md-4 padding-0 filtr-item" data-category="{{.category}}">
+                        <div class="portfolio-block">
+                            <!-- <a href="{{ .url  }}">
+                                <img class="img-fluid" id="session-img" src="{{ .image | absURL }}" alt="portfolio-image">
+                            </a> -->
+                            <div style="padding: 10px">
+                            <h4>
+                                {{ .title }}
+                            </h4>
+                            <p>{{ .ps }} </p>
+                            <a class="btn btn-main"  href="{{ .payload }}" id = "session-link">
+                                Payload
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                {{ end }}
+            </div>
+        </div>
+        <!-- end row -->
+    </section>
+    {{ "<!-- End section -->" | safeHTML }}
+    {{ end }}
+    
+{{ end }}
