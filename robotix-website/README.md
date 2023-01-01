@@ -1,0 +1,4 @@
+- Content for main page present in `content/english/_index.md`
+- Navbar items present in `config/_default/menus.en.toml
+- Site logo present in `config/_default/params.toml:logo`
+- Change all images in `assets/images` as well as `static/images`
