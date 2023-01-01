@@ -4,12 +4,12 @@ banner:
   enable: true
   bg_image: "images/slider-bg.jpg"
   bg_overlay: true
-  title: "A Digital Marketing <br/> & Design Agency"
-  content: "We love the Web and the work we do.We work closely with our clients to deliver  the best possible solutions for their needs"
+  title: "The Aviation Club </br> of IIT Hyderabad"
+  content: "Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus"
   button:
     enable: true
-    label: "Discover Our Project"
-    link: "project/"
+    label: "Explore"
+    link: "#about"
 
 ############################# About #################################
 about:
@@ -35,13 +35,13 @@ portfolio:
   "
   button:
     enable: true
-    label: "View Works"
+    label: "View Projects"
     link: "project/"
 
 
 ############################# Service ############################
 service:
-  enable: true
+  enable: false
   # service content comes from "service.md" file
 
 
@@ -166,12 +166,12 @@ team:
 cta:
   enable: true
   bg_image: "images/call-to-action-bg.jpg"
-  title: "We design delightful digital experiences."
-  content: "Read more about what we do and our philosophy of design. Judge for yourself The work and results <br> we’ve achieved for other clients, and meet our highly experienced Team who just love to design."
+  title: "Read all our blogs"
+  content: "Read more about what we do and our philosophy of design. Judge for yourself, the work and results <br> we’ve achieved, and meet our highly experienced team who just love to design."
   button:
     enable: true
-    label: "Tell Us Your Story"
-    link: "contact/"
+    label: "Explore Blogs"
+    link: "blog/"
 
 ############################# Funfacts ###############################
 funfacts:
