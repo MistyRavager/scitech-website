@@ -87,7 +87,7 @@
 {{ "<!-- Team Section Start -->" | safeHTML }}
 <section id="team" class="section">
 	<div class="container">
-	  <div class="row justify-content-center">
+	  <div class="row justify-content-center" id="team-row">
 		<div class="col-lg-12">
 		  <div class="row">
         <div class="section-title text-center">
@@ -95,6 +95,7 @@
           {{ with .description }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
         </div>
       </div>
+    </div>
   
 		{{ range .team_member}}
 		{{"<!-- team member -->" | safeHTML}}

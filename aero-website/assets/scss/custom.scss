@@ -153,3 +153,9 @@ $background-color_2: #57cbcc;
 		background-color: $background-color_2;
 	}
 }
+
+#team-row {
+	justify-content: center !important;
+	display: flex;
+	flex-wrap: wrap;
+}
