@@ -15,8 +15,8 @@ banner:
 about:
   enable: true
   title: "About Us"
-  description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics"
-  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id."
+  description: Want some thrilling flying stuff? Fascinated with flying things? Wanna blow your mind with the flow of wind? Come join us for an exciting experience!
+  content: Aeromodelling is the art of designing and getting the design to build some awe-inspiring stuff to meet the skies. At IITH; we aviation enthusiasts fuel innovation to re-invent “flying” like it has never been before. Let’s re-energise aviation.
   image: "images/wrapper-img.png"
 
 
@@ -43,6 +43,123 @@ portfolio:
 service:
   enable: true
   # service content comes from "service.md" file
+
+
+############################# Team ############################
+team:
+  enable : true
+  title : OUR TEAM
+  team_member :
+    # team member loop
+    - name : Vikhyath K
+      image_webp : images/team/team-1.webp
+      image : images/team/team-1.jpg
+      designation : CEO/Founder
+      content : Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
+      social :
+        - icon : fab fa-github 
+          link : "#"
+        - icon : fab fa-twitter 
+          link : "#"
+        - icon : fab fa-linkedin   
+          link : "#"
+        - icon : fab fa-instagram  
+          link : "#"
+    # team member loop
+    - name : Rachit KD
+      image_webp : images/team/team-2.webp
+      image : images/team/team-2.jpg
+      designation : Manager
+      content : Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
+      social :
+        - icon : fab fa-github 
+          link : "#"
+        - icon : fab fa-twitter 
+          link : "#"
+        - icon : fab fa-linkedin   
+          link : "#"
+        - icon : fab fa-instagram  
+          link : "#"
+        
+    # team member loop
+    - name : Aayush Patel
+      image_webp : images/team/team-3.webp
+      image : images/team/team-3.jpg
+      designation : Web Developer
+      content : Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
+      social :
+        - icon : fab fa-github 
+          link : "#"
+        - icon : fab fa-twitter 
+          link : "#"
+        - icon : fab fa-linkedin   
+          link : "#"
+        - icon : fab fa-instagram  
+          link : "#"
+        
+    # team member loop
+    - name : KG
+      image_webp : images/team/team-4.webp
+      image : images/team/team-4.jpg
+      designation : SEO Specialist
+      content : Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
+      social :
+        - icon : fab fa-github 
+          link : "#"
+        - icon : fab fa-twitter 
+          link : "#"
+        - icon : fab fa-linkedin   
+          link : "#"
+        - icon : fab fa-instagram  
+          link : "#"
+
+    - name : Rahuboy
+      image_webp : images/team/team-1.webp
+      image : images/team/team-1.jpg
+      designation : CEO/Founder
+      content : Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
+      social :
+        - icon : fab fa-github 
+          link : "#"
+        - icon : fab fa-twitter 
+          link : "#"
+        - icon : fab fa-linkedin   
+          link : "#"
+        - icon : fab fa-instagram  
+          link : "#"
+
+
+    - name : Adhith
+      image_webp : images/team/team-1.webp
+      image : images/team/team-1.jpg
+      designation : CEO/Founder
+      content : Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
+      social :
+        - icon : fab fa-github 
+          link : "#"
+        - icon : fab fa-twitter 
+          link : "#"
+        - icon : fab fa-linkedin   
+          link : "#"
+        - icon : fab fa-instagram  
+          link : "#"
+
+
+    - name : Aero dude
+      image_webp : images/team/team-1.webp
+      image : images/team/team-1.jpg
+      designation : CEO/Founder
+      content : Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
+      social :
+        - icon : fab fa-github 
+          link : "#"
+        - icon : fab fa-twitter 
+          link : "#"
+        - icon : fab fa-linkedin   
+          link : "#"
+        - icon : fab fa-instagram  
+          link : "#"
+
 
 
 ############################ call to action ###########################

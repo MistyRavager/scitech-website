@@ -1,1 +1,155 @@
 // Add your custom code
+
+$color_1: #fff;
+$color_2: #57cbcc;
+$color_3: rgb(169, 157, 157);
+$color_4: #555;
+$color_5: #02bdd5;
+$color_6: green;
+$background-color_1: #292F36;
+$background-color_2: rgba(87, 203, 204, 0.7);
+$background-color_3: #fff;
+
+.team-member {
+	background-color: $background-color_1;
+	margin-bottom: 10px;
+	&:hover {
+		.mask {
+			cursor: pointer;
+			opacity: 1;
+			filter: alpha(opacity=100);
+			-webkit-transform: rotateY(0deg) scale(1, 1);
+			transform: rotateY(0deg) scale(1, 1);
+		}
+	}
+}
+.member-photo {
+	overflow: hidden;
+	position: relative;
+	&:hover {
+		img {
+			-webkit-transform: scale(1.2);
+			transform: scale(1.2);
+		}
+	}
+	img {
+		transition: all 0.4s ease 0s;
+	}
+	.mask {
+		background-color: $background-color_2;
+		position: absolute;
+		text-align: center;
+		height: 100%;
+		width: 100%;
+		left: 0;
+		top: 0;
+		opacity: 0;
+		filter: alpha(opacity=0);
+		transition: all .5s ease-out 0s;
+		-webkit-transform: rotateY(180deg) scale(0.5, 0.5);
+		transform: rotateY(180deg) scale(0.5, 0.5);
+		ul {
+			text-align: center;
+			position: relative;
+			top: 125px;
+			li {
+				a {
+					border: 1px solid #fff;
+					color: $color_1;
+					display: block;
+					font-size: 20px;
+					height: 35px;
+					line-height: 35px;
+					text-align: center;
+					width: 35px;
+					&:hover {
+						background-color: $background-color_3;
+						color: $color_2;
+						border: 1px solid transparent;
+					}
+				}
+			}
+		}
+	}
+}
+.member-meta {
+	padding: 15px;
+	color: $color_3;
+	h4 {
+		margin: 0 0 5px;
+	}
+	span {
+		font-size: 12px;
+	}
+}
+#footer {
+	background: #fff;
+	padding: 25px 0;
+	color: $color_4;
+	.copyright {
+		font-size: 13px;
+		margin-bottom: 0;
+		a {
+			color: $color_5;
+		}
+	}
+	.social {
+		text-align: right;
+		margin-bottom: 0;
+		li {
+			display: inline-block;
+			margin-right: 15px;
+			a {
+				font-size: 22px;
+				color: $color_5;
+			}
+		}
+	}
+}
+.cd-headline.slide {
+	.cd-words-wrapper {
+		color: $color_6;
+	}
+}
+ul.social-icons {
+	height: auto;
+	overflow: hidden;
+	list-style: none !important;
+	margin-bottom: 10px;
+	li {
+		float: none;
+		display: inline-block;
+		height: 36px;
+	}
+}
+@media (max-width: 768px) {
+	.member-photo {
+		text-align: center;
+		img {
+			display: inline-block;
+		}
+	}
+}
+
+
+$background-color_1: #fff;
+$background-color_2: #57cbcc;
+
+.border-meghna {
+	border-top: 2px solid rgba(236, 239, 241, 0.07);
+	height: 1px;
+	margin: 15px auto 0;
+	position: relative;
+	width: 30%;
+	&:before {
+		background-color: $background-color_1;
+		content: '';
+		height: 6px;
+		left: 50%;
+		margin-left: -20px;
+		position: absolute;
+		top: -4px;
+		width: 50px;
+		background-color: $background-color_2;
+	}
+}
