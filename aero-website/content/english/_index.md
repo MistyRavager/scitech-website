@@ -17,13 +17,13 @@ about:
   title: "About Us"
   description: Want some thrilling flying stuff? Fascinated with flying things? Wanna blow your mind with the flow of wind? Come join us for an exciting experience!
   content: Aeromodelling is the art of designing and getting the design to build some awe-inspiring stuff to meet the skies. At IITH; we aviation enthusiasts fuel innovation to re-invent “flying” like it has never been before. Let’s re-energise aviation.
-  image: "images/wrapper-img.png"
+  image: "images/drone.png"
 
 
 ######################### Portfolio ###############################
 portfolio:
   enable: true
-  bg_image: "images/feature-bg.jpg"
+  bg_image: "images/feature-bg2.png"
   title: "WE BELIEVE IN GREAT IDEAS"
   content: " Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
 
@@ -165,7 +165,7 @@ team:
 ############################ call to action ###########################
 cta:
   enable: true
-  bg_image: "images/call-to-action-bg.jpg"
+  bg_image: "images/call-to-action-bg2.jpg"
   title: "Read all our blogs"
   content: "Read more about what we do and our philosophy of design. Judge for yourself, the work and results <br> we’ve achieved, and meet our highly experienced team who just love to design."
   button:
@@ -201,22 +201,21 @@ funfacts:
 
   testimonial_slider:
   # testimonial item loop
-  - name: "Raymond Roy"
-    image: "images/clients/avater-1.jpg"
-    designation: "CEO-Themefisher"
-    content: "This Company created an e-commerce site with the tools to make our business a success, with innovative ideas we feel that our site has unique elements that make us stand out from the crowd."
+  - name: "Amelia Earhart"
+    image: "images/clients/avatar-1.webp"
+    designation: "Aviator"
+    content: "Flying may not be all plain sailing, but the fun of it is worth the price."
+  # testimonial item loop
+  - name: "Orville Wright"
+    image: "images/clients/avatar-2.jpeg"
+    designation: "Aviation Pioneer"
+    content: "If we worked on the assumption that what is accepted as true really is true, then there would be little hope for advance."
 
   # testimonial item loop
-  - name: "Randi Renin"
-    image: "images/clients/avater-1.jpg"
-    designation: "CEO-Themefisher"
-    content: "This Company created an e-commerce site with the tools to make our business a success, with innovative ideas we feel that our site has unique elements that make us stand out from the crowd."
-
-  # testimonial item loop
-  - name: "Rose Rio"
-    image: "images/clients/avater-3.jpg"
-    designation: "CEO-Themefisher"
-    content: "This Company created an e-commerce site with the tools to make our business a success, with innovative ideas we feel that our site has unique elements that make us stand out from the crowd."
+  - name: "Leonardo Da Vinci"
+    image: "images/clients/avatar-3.jpeg"
+    designation: "Polymath"
+    content: "Once you have tasted flight, you will forever walk the earth with your eyes turned skyward. For there you have been, and there you will always long to return."
 
 
 ---

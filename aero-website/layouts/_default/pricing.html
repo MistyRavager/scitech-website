@@ -1,4 +1,4 @@
-{{ define "main" }}
+<!-- {{ define "main" }}
 
 {{ partial "page-title.html" . }}
 
@@ -6,9 +6,9 @@
 {{ if .enable }}
 <section class="pricing-table section bg-gray">
   <div class="container">
-    <div class="row">
+    <div class="row"> -->
       <!-- single pricing table -->
-      {{ range .pricing_table }}
+      <!-- {{ range .pricing_table }}
       <div class="col-md-4 col-sm-6 col-xs-12">
         <div class="pricing-item text-center">
           <div class="price-title">
@@ -24,18 +24,18 @@
           <a class="btn btn-small" href="{{ .link | safeURL }}">{{ i18n "buy_now" }}</a>
         </div>
       </div>
-      {{ end }}
+      {{ end }} -->
       <!-- end single pricing table -->
-    </div>
+    <!-- </div>
   </div>
 </section>
 {{ end }}
-{{ end }}
+{{ end }} -->
 
 <!-- Call to action -->
-{{ if .Params.cta.enable }}
+<!-- {{ if .Params.cta.enable }}
 {{ partial "cta.html" . }}
-{{ end }}
+{{ end }} -->
 <!-- /Call to action -->
 
-{{ end }}
+<!-- {{ end }} -->

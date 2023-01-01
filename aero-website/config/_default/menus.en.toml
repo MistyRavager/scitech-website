@@ -12,12 +12,12 @@ url = "#about"
 weight = 2
 
 [[main]]
-name = "Project"
+name = "Projects"
 url = "project/"
 weight = 3
 
 [[main]]
-name = "Blog"
+name = "Blogs"
 url = "blog/"
 weight = 4
 
