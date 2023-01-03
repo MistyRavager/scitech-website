@@ -2,7 +2,7 @@
 {{ with $data.archives}}
     {{ if .enable }}
     {{ "<!-- Start Portfolio Section -->" | safeHTML }}
-    <section class="portfolio-section" id="portfolio">
+    <section class="portfolio-section" id="portfolio" style="margin-bottom: 50px;">
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
@@ -32,22 +32,30 @@
             </div>
             <div class="row filtr-container">
                 {{ range .item }}
-                    <div class="col-6 col-md-4 padding-0 filtr-item" data-category="{{.category}}">
-                        <div class="portfolio-block">
-                            <!-- <a href="{{ .url  }}">
-                                <img class="img-fluid" id="session-img" src="{{ .image | absURL }}" alt="portfolio-image">
-                            </a> -->
-                            <div style="padding: 10px">
-                            <h4>
+                <article class="col-12 col-md-4 filtr-item" data-category="{{.category}}">
+                    <div class="post-item">
+                        <!-- <div class="post-thumb">
+                            <img class="img-fluid shadow rounded" src="{{ with .Params.image }}{{ . | absURL }}{{ end }}" alt="Generic placeholder image">
+                        </div> -->
+                        <div class="post-title">
+                            <h3 class="mt-0">
                                 {{ .title }}
-                            </h4>
-                            <p>{{ .ps }} </p>
-                            <a class="btn btn-main"  href="{{ .payload }}" id = "session-link">
-                                Payload
-                            </a>
-                            </div>
+                            </h3>
                         </div>
+                        <!-- <div class="post-meta">
+                            <ul class="list-inline">
+                                <li class="">
+                                    <span>-</span>
+                                    {{ .category  }}
+                                </li>
+                            </ul>
+                        </div> -->
+                        <div class="post-content">
+                            <p>{{ .ps }}</p>
+                        </div>
+                        <a class="btn btn-main" href="{{ .payload }}">Payload</a>
                     </div>
+                </article>
                 {{ end }}
             </div>
         </div>
