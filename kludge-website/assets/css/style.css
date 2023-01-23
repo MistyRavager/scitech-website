@@ -1234,6 +1234,35 @@ a:focus, a:hover {
   border-bottom: 2px solid #32f035;
   color: rgb(0, 254, 34);
 }
+.portfolio-filter-1 {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.portfolio-filter-1 a {
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0 10px;
+  padding: 10px 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  color: rgb(255, 255, 255);
+  border-bottom: 2px solid #32f035;
+  outline: none;
+  background: none;
+}
+
+.portfolio-filter-1 a:hover {
+  background-color: rgb(0, 255, 17);
+}
+
+.portfolio-filter-1 a.active {
+  border-bottom: 2px solid #32f035;
+  color: rgb(0, 254, 34);
+}
 
 .portfolio-items-wrapper li {
   width: 32.33%;

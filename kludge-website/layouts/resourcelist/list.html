@@ -1,0 +1,42 @@
+{{ define "main" }}
+{{ partial "page-title" . }}
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ with $data.resources }}
+    {{ if .enable }}
+    {{ "<!-- Feature Section Start -->" | safeHTML }}
+    <section class="services section-xs" id="services">
+        <div class="container">
+            <div class="row">
+            <ul>
+                {{ range .topics }}
+                {{ $topic := .}}
+                <li> <h5>{{$topic}}:</h5>
+                    {{ range $data.resources.item }}
+                        {{ if eq $topic .title }}    
+                                    <ul class="list">
+                                        {{ if .link }}
+                                        <li style="list-style-type:circle;margin-top: 10px;"> 
+                                            <p style="color: rgb(156, 150, 150);">{{.description}}:<a href="{{.link}}" target="_blank">Link</a></p>
+                                                
+                                        </li>
+                                        {{ else }}
+                                        <li style="list-style-type:circle;margin-top: 10px; margin-bottom: 20px;"> 
+                                            <p style="color: rgb(156, 150, 150);">{{.description}}</p>
+                                        </li>
+                                        {{ end }}
+                                    </ul>
+                                    {{ end }}
+                                    {{ end }}
+                    </li>
+                {{ end }}
+            </ul>
+            </div>
+            
+        </div>
+    </section>
+    {{ "<!-- End Feature section -->" | safeHTML }}
+    {{ end }}
+{{ end }}
+
+{{ end }}
