@@ -1,51 +1,28 @@
-#################### default parameters ################################
-logo = "images/logo.png"
-logo_width = "200px"
-# OpenGraph / Twitter Card metadata
-description = "This is meta description"
-author = "Themefisher"
-image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
-# contact form action
-contact_form_action = "#" # contact form works with https://formspree.io
 
-# Type of pages to be rendered with a blog view
-blogCategoryType = "category"
+############################# Contact Us ########################
+[[ contactus ]]
+name = "Sana B"
+description = "Coordinator"
+phone = "+91896465465"
 
-# Preloader
-[preloader]
-enable = false
-preloader = "" # use jpg, png, svg or gif format.
+[[ contactus ]]
+name = "Varun"
+description = "Coordinator"
+phone = "+91896465465"
 
-# Navigation buttons
-[navigation_button]
-enable = true
-label = "Get Started"
-link = "contact"
-
-# cookies
-[cookies]
-enable = false
-expire_days = 2
-content = "This site uses cookies. By continuing to use this website, you agree to their use."
-button = "I Accept"
-  
 ############################# social site ########################
+ # themify icon : https://themify.me/themify-icons
 [[social]]
 title = "facebook"
-icon = "fab fa-facebook" # themify icon : https://themify.me/themify-icons
-link = "#"
+icon = "fab fa-facebook"
+link = "https://www.facebook.com/elektronica.iith/"
 
 [[social]]
-title = "twitter"
-icon = "fab fa-twitter" # themify icon : https://themify.me/themify-icons
-link = "#"
+title = "instagram"
+icon = "fab fa-instagram"
+link = "https://www.instagram.com/elektronica_iith/"
 
 [[social]]
-title = "skype"
-icon = "fab fa-skype" # themify icon : https://themify.me/themify-icons
-link = "#"
-
-[[social]]
-title = "linkedin"
-icon = "fab fa-linkedin" # themify icon : https://themify.me/themify-icons
-link = "#"
+title = "github"
+icon = "fab fa-github"
+link = "https://github.com/elektronicaIITH"

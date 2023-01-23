@@ -1,3 +1,77 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Glitch'
+theme = 'osprey'
+
+[Params]
+  glitch_name="adhitht"
+  tagline = "Gaming Club IITH"
+  description = "Full-stack web developer and UI/UX enthusiast based in San Diego, CA."
+  logoBig = "/images/logo-nobg.png"
+  logoSmall = "/images/logo-nobg.png"
+  favicon = "favicon.ico"
+  opengraphImage = "/images/logo-nobg.png"
+  email = ""
+  googleTagManager = ""
+  customCSS = false
+
+  # Social media links in footer
+  twitter = ""
+  instagram = "glitch.iith"
+  github = "glitch-iith"
+  twitch = "glitchiith"
+
+  # Copyright and theme author credit in footer
+  copyright = false
+  credit = false
+
+  # Cache busting of static resources (additional set up required)
+  cacheBustCSS = true
+  cacheBustJS = true
+
+  # Code highlighting with highlight.js
+  highlightJS = true
+  highlightJSStyle = "" # For custom highlight.js styles, add your /path/to/styles/default.css
+  highlightJSScript = "" # For custom highlight.js languages config, add your /path/to/highlight.pack.js
+
+  # Choose either Formspree contact form or Basin contact form
+  ajaxFormspree = true
+  ajaxFormspreeGold = false
+  ajaxBasin = "https://usebasin.com/f/0eae7044d4c2"
+
+  # Lazy loading with lazysizes
+  lazyloading = true
+
+  custom_css = ["css/custom_css.css","css/glitch_effect.css","css/twitch_hover.css","css/team.css"]
+  
+  # Background Video For Website
+  promo_video = "video/glitch_promo.mp4"
+
+  # Address for the Club
+  address = "Indian Institute of Technology, Hyderabad <br> Kandi,Sangareddy <br> 502285"
+
+  # Custom Image for Event Background
+  custom_event_img = "images/events.png"
+
+[[menu.main]]
+  name = "About"
+  url  = "/#about"
+  weight = 1
+[[menu.main]]
+  name = "Events"
+  url  = "/#events"
+  weight = 2
+[[menu.main]]
+  name = "Blog"
+  url  = "/#blog"
+  weight = 3
+[[menu.main]]
+  name = "Team"
+  url  = "/#team"
+  weight = 4
+
+
+
+
+
+

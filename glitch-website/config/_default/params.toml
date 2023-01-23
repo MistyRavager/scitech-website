@@ -1,0 +1,39 @@
+############################## Team ##############################
+
+[[ team ]]
+name="Nikhil P"
+position="Mentor"
+url="images/team/nikhil.png"
+twitch_url="https://www.twitch.tv/glitchiith"
+
+[[ team ]]
+name="Vishal Datta"
+position="Coordinator"
+url="images/team/vishaldatta.png"
+twitch_url="https://www.twitch.tv/glitchiith"
+
+
+
+
+############################## Social ##############################
+[[ social ]]
+url="https://www.instagram.com/glitch.iith/"
+class="fa fa-instagram social"
+
+[[ social ]]
+url="https://www.twitch.tv/glitchiith"
+class="fa fa-twitch social"
+
+
+
+
+############################## Conact Us ##############################
+[[ contactus]]
+name="Nikhil Praveen"
+position="Mentor"
+phone="9946297901"
+
+[[ contactus]]
+name="Venkata Raghav"
+position="Coordinator"
+phone="7207612345"

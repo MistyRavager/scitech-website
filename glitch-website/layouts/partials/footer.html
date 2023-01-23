@@ -1,0 +1,44 @@
+<footer class="row middle-xs center-xs footer_main">
+    <div class="footer_socials">
+        {{ range site.Params.social }}
+            <a target="_base" href="{{ .url }}"><p class="{{ .class }}"></p></a>
+        {{ end }}
+    </div>
+
+    <div class="footer_contactus">
+      <div class="contactus_text">Contact Us</div>
+      {{ range site.Params.contactus }}
+            <div class="footer_contactus_detail">
+                <p class="contactus_name"> {{ .name }}</p>
+                <p class="contactus_pos"> {{ .position }}</p>
+                <a href="tel:{{ .phone }}"><p class="contactus_tel"> {{ .phone }}</p></a>
+            </div>
+        {{ end }}
+    </div>
+    
+    <div class="footer_locate">
+      <div class="locate_head">
+        <img class="locate_img" src="{{ .Site.Params.logoSmall }}">
+        <p class="locate_title">GLITCH</p>
+      </div>
+      <div class="locate_address">{{ .Site.Params.address | safeHTML}}</div>
+    </div>
+
+
+
+
+
+    {{ if .Site.Params.facebook }}
+      <div class="col-xs-3 col-md-2"><a target="_blank" rel="noopener" href="https://facebook.com/{{ .Site.Params.facebook }}">{{ i18n "facebook" }}</a></div>
+    {{ end }}
+  
+    {{ if or (.Site.Params.copyright) (.Site.Params.credit) }}
+      <div class="col-xs-12">
+        {{ if .Site.Params.copyright }}
+        {{ i18n "copyright" }} &copy; {{ now.Format "2006" }} {{ .Site.Title }}.
+        {{ end }}
+      </div>
+    {{ end }}
+  
+  </footer>
+  

@@ -1,0 +1,35 @@
+# main menu
+[[main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[main]]
+name = "Blog"
+url = "blog/"
+weight = 2
+
+[[main]]
+name = "Team"
+url = "team/"
+weight = 2
+
+[[main]]
+name = "Contact"
+url = "contact/"
+weight = 3
+
+#contactus
+[[ contactus ]]
+name = "Varun "
+    [[ details ]]
+        desc = "Coordinator" 
+        Description = "Coordinator" 
+        phone = "+918745123694"
+    [[ details ]]
+
+
+[[ contactus ]]
+name = "Sana B"
+desc = "Coordinator" 
+Description = "Coordinator"

@@ -1,0 +1,25 @@
+<section class="team color_black" id="team">
+    <div class="row center-xs">
+        <div class="col-xs-12 color_white"><h1 class="color_white">Team</h1></div>
+    </div>
+
+    <div class="team_cont">
+        {{ range .Site.Params.team}}
+            {{ if or (eq .position "Coordinator") (eq .position "Mentor") }}
+                <div class="team_main">
+                    <a target="_base" href="{{ .twitch_url}}"><div class="stream"><img class="stream__thumbnail" src="{{ .url }}"></div></a>
+                    <div class="details">
+                        <p class="member_name">{{ .name}}</p>
+                        <div class="position_container">
+                            <p class="member_position"> {{ .position }} </p>
+                        </div>
+                    </div>
+                </div>
+            {{ end }}
+        {{ end }}
+    </div>
+
+    <div class="row center-xs">
+        <div class="col-xs-12"><h3><a href="/team">Meet Others...</a></h3></div>
+    </div>
+</section>

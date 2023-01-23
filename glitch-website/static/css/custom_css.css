@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Metal+Mania&family=Rowdies:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@font-face{font-family:'Google Sans';font-style:normal;font-weight:400;font-display:optional;src:url(//fonts.gstatic.com/s/googlesans/v14/4UaGrENHsxJlGDuGo1OIlL3Kwp5MKg.woff2)format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Google Sans';font-style:normal;font-weight:400;font-display:optional;src:url(//fonts.gstatic.com/s/googlesans/v14/4UaGrENHsxJlGDuGo1OIlL3Nwp5MKg.woff2)format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Google Sans';font-style:normal;font-weight:400;font-display:optional;src:url(//fonts.gstatic.com/s/googlesans/v14/4UaGrENHsxJlGDuGo1OIlL3Bwp5MKg.woff2)format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB;}@font-face{font-family:'Google Sans';font-style:normal;font-weight:400;font-display:optional;src:url(//fonts.gstatic.com/s/googlesans/v14/4UaGrENHsxJlGDuGo1OIlL3Awp5MKg.woff2)format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Google Sans';font-style:normal;font-weight:400;font-display:optional;src:url(//fonts.gstatic.com/s/googlesans/v14/4UaGrENHsxJlGDuGo1OIlL3Owp4.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+
+/* Single Pages */
+main{
+    background-color: #000000;
+}
+
+.about {
+    display: flex;
+    min-height: 100vh;
+}
+
+.events {
+    display: flex;
+    min-height: 100vh;
+}
+
+.content h1{
+    color:white;
+}
+
+.content a{
+    color: #ffc98a;
+}
+
+.pagination{
+    display: flex;
+}
+
+.pagination a{
+    padding: 5px;
+}
+
+.entry-content p{
+    color:white;
+}
+
+.hero{
+    font-family: 'Kanit',sans-serif;
+    font-weight: bold;  
+}
+
+.logo_comp{
+    position: absolute;
+    top: 30%;
+}
+
+/* Video Div Tag  */
+.promo_video{
+    z-index: 0;
+}
+
+/* Video */
+/* I don't have any idea how this thing magically works
+Like It is gonna break either for mobile or pc if one from below is removed */
+
+.promovideo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    max-width: 100%;
+    object-fit: cover !important;
+}
+
+.promovideo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover !important;
+}
+
+span{
+    color: rgb(231, 226, 226);
+}
+
+.tagline{
+    color: white;
+}
+
+/* .color_darkblue{
+    color: #0A2647;
+    background-color: #0A2647;
+} */
+
+/* .color_darkblue{
+    color: #182747;
+    background-color: #182747;
+} */
+
+.color_darkblue{
+    color: #0F193E;
+    background-color: #0F193E;
+}
+/* 03060F */
+
+.color_black{
+    color: #000000;
+    background-color: #000000;
+}
+
+.color_white{
+    color: #FFFFFF;
+}
+
+.about_p p{
+    color:white !important;
+}
+
+.bar_icon{
+    font-size: 40px;
+    color: white;
+}
+
+a:hover{
+    color: #FD3712;
+}
+
+/* Events Container */
+.event_custom{
+    margin: 0;
+    padding: 0 0 50px 0;
+}
+.events_container{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+    color: white;
+    background-color: #000000;
+}
+.events_main{
+    position: relative;
+    padding: 0 0 50px 0;
+}
+
+.event_details{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 50;
+}
+
+.event_background{
+    /* min-width: 300px; */
+    width: 500px;
+    height: auto;
+}
+
+.event_details p{
+    color: white;
+    font-family: 'Google Sans';
+    font-weight: 1000;
+    padding: 5px 0 0 0;
+    margin: 0;
+}
+
+.event_title{
+    font-size: 30px;
+}
+
+.event_venue{
+    font-size: 22px;
+
+}
+
+.event_dateandtime{
+    font-size: 18px;
+}
+
+@media screen and (max-width: 420px) {
+    .event_title{
+        font-size: 25px;
+    }
+    .event_venue{
+        font-size: 18px;
+    
+    }
+    .event_dateandtime{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .event_title{
+        font-size: 20px;
+    }
+    .event_venue{
+        font-size: 15px;
+    
+    }
+    .event_dateandtime{
+        font-size: 12px;
+    }
+}
+
+
+/* Twitch Hover for Event */
+.stream {
+    position: relative;
+    display: inline-block;
+    background-color: #9147ff;
+  }
+  
+    .stream:before,
+    .stream:after {
+      content: '';
+      display: block;
+      background-color: #9147ff;
+      width: 8px;
+      height: 8px;
+      position: absolute;
+      transition: all .15s ease;
+    }
+  
+    .stream:before {
+      top: 0;
+      left: 0;
+      transform-origin: top left;
+      transform: rotate(-45deg) scale(0);
+    }
+  
+    .stream:after {
+      right: 0;
+      bottom: 0;
+      transform-origin: bottom right;
+      transform: rotate(45deg) scale(0);
+    }
+  
+    .event__thumbnail {
+      display: block;
+      transform: translate(0, 0);
+      transition: all .15s ease;
+      position: relative;
+      z-index: 10;
+    }
+  
+  .stream:hover .event__thumbnail {
+    transform: translate(6px, -6px);
+  }
+  
+  .stream:hover:before {
+    transform: rotate(-45deg) scale(1);
+  }
+  
+  .stream:hover:after {
+    transform: rotate(45deg) scale(1);
+  }
+
+/* Team Container */
+
+.team_cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.team_main{
+    margin: 50px;
+}
+
+.member_photo{
+    height: 250px;
+    width: 250px;
+}
+
+
+/* Footer Main */
+.footer_main{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer_social{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.social{
+    color:white;
+    font-size: 48px;
+    padding: 25px;
+}
+
+.footer_contactus p{
+    padding: 0;
+    margin: 0;
+    color: white;
+    width: 350px;
+}
+
+.contactus_pos, .contactus_tel{
+    font-size: 17px;
+}
+
+.footer_contactus_detail{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px;
+    margin: 0 0 10px 0;
+}
+
+.contactus_text{
+    font-size: larger;
+    font-weight: 700;
+    padding: 7px;
+}
+
+footer {
+    height: auto;
+}
+
+.contactus_name{
+    font-weight: 550;
+}
+
+
+/* Footer Locate */
+.footer_locate{
+    margin: 0 0 20px 0;
+}
+
+.locate_img{
+    height: 50px;
+}
+
+
+.locate_head{
+    display: flex;
+
+}
+
+.locate_title{
+    color: white;
+    padding: 5px 0 0 10px;
+    font-size: 27px;
+    font-weight: 700;
+    font-family: 'Kanit', sans-serif;
+    margin: 0 0 10px 0;
+}
+
+.locate_address{
+    text-align: start;    
+}

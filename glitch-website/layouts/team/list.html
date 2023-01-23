@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  {{ partial "head.html" . }}
+  <body>
+    {{ partial "body-top" . }}
+    <main>
+
+      <section class="team_container">
+        <section class="content">
+          <h1 class="team_heading">{{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Title }} {{ end }}</h1>
+{{/*  
+          <div class="pos_head"> Mentor </div>
+          <div class="team_cont">
+              {{ range .Site.Params.team}}
+                  {{ if eq .position "Mentor"}}
+                      <div class="team_main">
+                          <a target="_base" href="{{ .twitch_url}}"><div class="stream"><img class="stream__thumbnail" src="{{ .url }}"></div></a>
+                          <div class="details">
+                              <p class="member_name">{{ .name}}</p>
+                              <div class="position_container">
+                                  <p class="member_position"> {{ .position }} </p>
+                              </div>
+                          </div>
+                      </div>
+                  {{ end }}
+              {{ end }}
+          </div>
+
+
+        <div class="pos_head"> Coordinator </div>
+        <div class="team_cont">
+            {{ range .Site.Params.team}}
+                {{ if eq .position "Coordinator"}}
+                    <div class="team_main">
+                        <a target="_base" href="{{ .twitch_url}}"><div class="stream"><img class="stream__thumbnail" src="{{ .url }}"></div></a>
+                        <div class="details">
+                            <p class="member_name">{{ .name}}</p>
+                            <div class="position_container">
+                                <p class="member_position"> {{ .position }} </p>
+                            </div>
+                        </div>
+                    </div>
+                {{ end }}
+            {{ end }}
+        </div>
+
+        <div class="pos_head"> Core </div>
+        <div class="team_cont">
+            {{ range .Site.Params.team}}
+                {{ if eq .position "Core"}}
+                    <div class="team_main">
+                        <a target="_base" href="{{ .twitch_url}}"><div class="stream"><img class="stream__thumbnail" src="{{ .url }}"></div></a>
+                        <div class="details">
+                            <p class="member_name">{{ .name}}</p>
+                            <div class="position_container">
+                                <p class="member_position"> {{ .position }} </p>
+                            </div>
+                        </div>
+                    </div>
+                {{ end }}
+            {{ end }}
+        </div>  */}}
+
+
+        {{ with .Params.team }}
+            {{ if .mentor }}
+                <div class="pos_head"> Mentor </div>
+                <div class="team_cont">
+                    {{ range .mentor }}
+                            <div class="team_main">
+                                <a target="_base" href="{{ .twitch_url }}"><div class="stream"><img class="stream__thumbnail" src="{{ .url }}"></div></a>
+                                <div class="details">
+                                    <p class="member_name">{{ .name}}</p>
+                                    <div class="position_container">
+                                        <p class="member_position"> {{ .position }} </p>
+                                    </div>
+                                </div>
+                            </div>
+                    {{ end }}
+                </div>
+            {{ end}}
+
+            {{ if .coordinator }}
+                <div class="pos_head"> Coordinator </div>
+                <div class="team_cont">
+                    {{ range .coordinator }}
+                            <div class="team_main">
+                                <a target="_base" href="{{ .twitch_url }}"><div class="stream"><img class="stream__thumbnail member_photo" src="{{ .url }}"></div></a>
+                                <div class="details">
+                                    <p class="member_name">{{ .name}}</p>
+                                    <div class="position_container">
+                                        <p class="member_position"> {{ .position }} </p>
+                                    </div>
+                                </div>
+                            </div>
+                    {{ end }}
+                </div>
+            {{ end}}
+
+            {{ if .core }}
+            <div class="pos_head"> Core </div>
+            <div class="team_cont">
+                {{ range .core }}
+                        <div class="team_main">
+                            <a target="_base" href="{{ .twitch_url }}"><div class="stream"><img class="stream__thumbnail member_photo" src="{{ .url }}"></div></a>
+                            <div class="details">
+                                <p class="member_name">{{ .name}}</p>
+                                <div class="position_container">
+                                    <p class="member_position"> {{ .position }} </p>
+                                </div>
+                            </div>
+                        </div>
+                {{ end }}
+            </div>
+        {{ end}}
+
+        {{ end }}
+
+        
+
+
+
+
+        </section>
+        <br>
+        {{ partial "disqus" . }}
+      </section>
+
+    </main>
+    {{ partial "footer.html" . }}
+    {{ partial "body-bottom" . }}
+  </body>
+</html>

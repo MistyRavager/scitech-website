@@ -45,7 +45,34 @@
 </section>
 {{ end }}
 {{ end }}
+
+
+
 <!-- /feature -->
+
+<!-- Latest Blog -->
+<section class="section bg-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Latest Blog</h2>
+      </div>
+      {{range first .Site.Params.latest_blog ( where .Site.Pages "Section" "blog") }}
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="feature-card text-center">
+          <h4 class="mb-2">{{ .Title | title }}</h4>
+          {{ $contentt := plainify .Content}}
+          {{ $shortsum := split $contentt " " }}
+          <p> {{ delimit (first 15 $shortsum) " "}}..... </p>
+          <a class="nav-link" href="{{ .Permalink }}">Read More</a>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+<!-- /Latest Blog -->
+
 
 <!-- service -->
 {{ with .Params.service }}
@@ -119,6 +146,30 @@
 {{ end }}
 {{ end }}
 <!-- /screenshot -->
+
+<!-- Team -->
+
+<div class="home_team text-center">
+ <h2 class="section-title">Team</h2>
+</div>
+
+{{ with .Params.team }}
+    {{if .enabled}}   
+    <div class="team_wrap">
+    {{ range .members}}
+        <div class="team_member">
+            <img class="rounded team_image" src="{{ .url }}">
+            <div class="detail_wrap">
+                <h2>{{ .name}}</h2>
+                <p>{{ .position}}</p>
+            </div>
+        </div>
+    {{ end }}
+    </div>
+    {{ end }}
+
+{{ end }}
+<!--/Team -->
 
 <!-- call to action -->
 {{ with .Params.call_to_action }}

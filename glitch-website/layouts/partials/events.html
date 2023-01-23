@@ -1,0 +1,45 @@
+{{ $directory := "content/events" }}
+<section class="events color_black" id="events">
+    <div class="container">
+        <div class="row center-xs middle-xs color_black event_custom">
+        <div class="col-xs-12 color_black">
+            <h1 class="color_white">Events</h1>
+        </div>
+        </div>
+        <div class="events_container">
+
+            {{ range (where .Site.RegularPages "Section" "events") }}
+            
+                {{ if .Params.image}}
+                    <div class="events_main">
+                        <a href="{{ .Permalink }}">
+                    <div class="stream"><img class="event__thumbnail event_background" src="{{ .Params.image }}"></div>
+                    </a>
+                    </div>
+                {{ else }}
+                    <div class="events_main">
+                        <div class="event_details">
+                            {{ if .Params.textcolor }}
+                                <p class="event_title" style="color: {{ .Params.textcolor }}"> {{ .Params.title }} </p>
+                                <p class="event_venue" style="color: {{ .Params.textcolor }}"> {{ .Params.venue }} </p>
+                                <p class="event_dateandtime" style="color: {{ .Params.textcolor }}"> {{ .Params.dateandtime }}</p>
+                            {{ else }}
+                                <p class="event_title"> {{ .Params.title }} </p>
+                                <p class="event_venue"> {{ .Params.venue }} </p>
+                                <p class="event_dateandtime"> {{ .Params.dateandtime }}</p>
+                            {{ end }}
+                        </div>         
+                        <a href="{{ .Permalink }}">      
+                            {{ if .Params.background_image}}
+                            <div class="stream"><img class="event_background event__thumbnail" src="{{ .Params.background_image }}"></div>
+                            {{ else }}
+                            <div class="stream"><img class="event_background event__thumbnail" src="{{ site.Params.custom_event_img }}"></div>
+                            {{ end}}
+                        </a>     
+                    </div>
+                {{ end}}
+            {{ end}}
+
+        </div>
+    </div>
+</section>

@@ -1,0 +1,46 @@
+.logo{
+    display: inline-block;
+    font-weight: 1000;
+    font-size: 24px;
+  }
+  .navbar-nav:first-child{
+    color: transparent;
+  }
+  .team_member{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+    padding:45px;
+  }
+  .rounded{
+    border-radius: 50% !important;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+  }
+  .team_wrap{
+    display:flex !important;
+    flex-wrap: wrap;
+    justify-content: space-around  !important;
+  }
+  .detail_wrap{
+    padding: 25px;
+    text-align: center;
+  }
+  .home_team{
+    padding: 50px;
+  }
+
+  .row{
+    display:flex;
+    justify-content: space-around;
+  }
+
+  .nopadding{
+    padding: 0 !important;
+  }
+
+  .nomargin{
+    margin: 0 !important;
+  }

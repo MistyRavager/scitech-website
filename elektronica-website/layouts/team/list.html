@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+{{ partial "page-header.html" . }}
+
+<!-- checking blog -->
+
+{{ with .Params.team }}
+    {{if .enabled}}   
+    <div class="team_wrap">
+    {{ range .members}}
+        <div class="team_member">
+            <img class="rounded team_image" src="{{ .url }}">
+            <div class="detail_wrap">
+                <h2>{{ .name}}</h2>
+                <p>{{ .position}}</p>
+            </div>
+        </div>
+    {{ end }}
+    </div>
+    {{ end }}
+
+{{ end }}
+{{ end }}

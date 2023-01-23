@@ -1,42 +1,33 @@
-<footer class="bg-light section pb-0">
+<footer class="bg-light section pb-0 custom_footer">
   <div class="container">
     <div class="row">
+
+
       <div class="col-md-3 col-sm-6 mb-5">
-        {{ if site.Menus.footer_left }}
-        <div class="h3 mb-4">{{ site.Params.footer_menu_left }}</div>
+        {{ if site.Params.contactus }}
+        <div class="h3 mb-4"> Contact Us</div>
         <ul class="list-unstyled footer-list">
-          {{ range site.Menus.footer_left }}
-          <li><a href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>
+          {{ range site.Params.contactus }}
+          <li>
+            <h5> {{ .name }} </h5>
+            <p class="nomargin"> {{ .description }}</p>
+            <a class="nomargin nopadding" href="tel:{{ .phone}}">{{ .phone }}</a>
+          </li>
           {{ end }}
         </ul>
         {{ end }}
       </div>
-      <div class="col-md-3 col-sm-6 mb-5">
-        {{ if site.Menus.footer_middle }}
-        <div class="h3 mb-4">{{ site.Params.footer_menu_middle }}</div>
-        <ul class="list-unstyled footer-list">
-          {{ range site.Menus.footer_middle }}
-          <li><a href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>
-          {{ end }}
-        </ul>
-        {{ end }}
-      </div>
-      <div class="col-md-3 col-sm-6 mb-5">
-        {{ if site.Menus.footer_right }}
-        <div class="h3 mb-4">{{ site.Params.footer_menu_right }}</div>
-        <ul class="list-unstyled footer-list">
-          {{ range site.Menus.footer_right }}
-          <li><a href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>
-          {{ end }}
-        </ul>
-        {{ end }}
-      </div>
+
       <div class="col-md-3 col-sm-6 mb-5">
         <a class="d-block h3 mb-3" href="{{ site.BaseURL | absLangURL}}">
           {{ with site.Params.logo}}
           <img width="{{site.Params.logo_width}}" class="img-fluid" src="{{ . | relURL }}" alt="{{ site.Title }}">
           {{ else }}{{site.Title}}{{end}}
+          <p class="logo">{{site.Title}}</p>
         </a>
+        <div>
+          {{(.Site.Params.address) | safeHTML}}
+        </div>
         <p class="mb-4">{{ site.Params.footer_content | markdownify }}</p>
         {{ with site.Params.social }}
         <ul class="list-inline social-icons">

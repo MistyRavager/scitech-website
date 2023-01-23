@@ -1,3 +1,12 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Elektronica'
+
+theme = "bigspring-light"
+
+[params]
+    logo = 'assets/logo50x50.png'
+    # Number of blogs to display on homepage. 
+    latest_blog = 5
+    custom_css = ["css/custom.css"]
+    address = "Indian Institute of Technology Hyderabad, Kandi <br> 502285"
