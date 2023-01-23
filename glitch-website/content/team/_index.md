@@ -1,7 +1,7 @@
 ---
 title: "Team"
 date: 2023-01-14T00:12:20+05:30
-draft: true
+draft: false
 team:
     mentor:
         - name: "Nikhil Praveen"
