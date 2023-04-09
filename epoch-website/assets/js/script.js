@@ -1,283 +1,163 @@
-	/* ========================================================================= */
-	/*	Page Preloader
-	/* ========================================================================= */
+// Passive event listeners
+jQuery.event.special.touchstart = {
+  setup: function (_, ns, handle) {
+    'use strict';
+    this.addEventListener('touchstart', handle, {
+      passive: !ns.includes('noPreventDefault')
+    });
+  }
+};
+jQuery.event.special.touchmove = {
+  setup: function (_, ns, handle) {
+    'use strict';
+    this.addEventListener('touchmove', handle, {
+      passive: !ns.includes('noPreventDefault')
+    });
+  }
+};
 
-	$(window).on("load", function () {
-		$('#preloader').fadeOut('slow', function () {
-			$(this).remove();
-		});
-	});
+// Preloader js
+$(window).on('load', function () {
+  'use strict';
+  $('.preloader').fadeOut(0);
+});
 
-	(function ($) {
-		"use strict";
+$(document).ready(function () {
+  'use strict';
 
-		/* ========================================================================= */
-		/*	Portfolio Filtering Hook
-		/* =========================================================================  */
-		$('.play-icon i').click(function () {
-			var video = '<iframe allowfullscreen src="' + $(this).attr('data-video') + '"></iframe>';
-			$(this).replaceWith(video);
-		});
+  // Shuffle js filter and masonry
+  var containerEl = document.querySelector('.shuffle-wrapper');
+  if (containerEl) {
+    var Shuffle = window.Shuffle;
+    var myShuffle = new Shuffle(document.querySelector('.shuffle-wrapper'), {
+      itemSelector: '.shuffle-item',
+      buffer: 1
+    });
 
-		/* ========================================================================= */
-		/*	Portfolio Filtering Hook
-		/* =========================================================================  */
-		setTimeout(function () {
-			var filterizd = $('.filtr-container').filterizr({});
-			//Active changer
-			$('.filtr-control').on('click', function () {
-				$('.filtr-control').removeClass("active");
-				$(this).addClass("active");
-			});
-		}, 500);
+    jQuery('input[name="shuffle-filter"]').on('change', function (evt) {
+      var input = evt.currentTarget;
+      if (input.checked) {
+        myShuffle.filter(input.value);
+      }
+    });
+  }
 
-		/* ========================================================================= */
-		/*	Testimonial Carousel
-		/* =========================================================================  */
+  $('.portfolio-single-slider').slick({
+    infinite: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000
 
-		//Init the slider
-		$('.testimonial-slider').slick({
-			slidesToShow: 2,
-			slidesToScroll: 1,
-			infinite: true,
-			arrows: false,
-			autoplay: true,
-			autoplaySpeed: 2000,
-			responsive: [{
-					breakpoint: 600,
-					settings: {
-						slidesToShow: 1,
-						slidesToScroll: 2
-					}
-				},
-				{
-					breakpoint: 480,
-					settings: {
-						slidesToShow: 1,
-						slidesToScroll: 1
-					}
-				}
-			]
-		});
+  });
 
+  $('.clients-logo').slick({
+    infinite: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000
+  });
 
-		/* ========================================================================= */
-		/*	Clients Slider Carousel
-		/* =========================================================================  */
+  $('.testimonial-slider').slick({
+    slidesToShow: 1,
+    infinite: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000
+  });
 
-		//Init the slider
-		$('.clients-logo-slider').slick({
-			infinite: true,
-			arrows: false,
-			autoplay: true,
-			autoplaySpeed: 2000,
-			slidesToShow: 5,
-			slidesToScroll: 1,
-		});
+  //  Count Up
+  function counter() {
+    var oTop;
+    if ($('.count').length !== 0) {
+      oTop = $('.count').offset().top - window.innerHeight;
+    }
+    if ($(window).scrollTop() > oTop) {
+      $('.count').each(function () {
+        var $this = $(this),
+          countTo = $this.attr('data-count');
+        $({
+          countNum: $this.text()
+        }).animate({
+          countNum: countTo
+        }, {
+          duration: 1000,
+          easing: 'swing',
+          step: function () {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function () {
+            $this.text(this.countNum);
+          }
+        });
+      });
+    }
+  }
+  $(window).on('scroll', function () {
+    counter();
+  });
 
+  // Turn cloaked e-mail addresses into clickable mailto links
+  let emailSpans = document.getElementsByClassName("cloaked-e-mail");
 
+  for (let emailSpan of emailSpans) {
+    let emailLink = document.createElement("a");
+    let emailAddress = emailSpan.attributes.getNamedItem("data-user").value.split('').reverse().join('') + "@" + emailSpan.attributes.getNamedItem("data-domain").value.split('').reverse().join('');
+    emailLink.href = "mailto:" + emailAddress;
+    emailLink.innerText = emailAddress;
+    emailSpan.parentElement.insertBefore(emailLink, emailSpan);
+    emailSpan.parentElement.removeChild(emailSpan)
+  }
 
-
-		/* ========================================================================= */
-		/*	Company Slider Carousel
-		/* =========================================================================  */
-		$('.company-gallery').slick({
-			infinite: true,
-			arrows: false,
-			autoplay: true,
-			autoplaySpeed: 2000,
-			slidesToShow: 5,
-			slidesToScroll: 1,
-		});
-
-
-		/* ========================================================================= */
-		/*	Awars Counter Js
-		/* =========================================================================  */
-		$('.counter').each(function () {
-			var $this = $(this),
-				countTo = $this.attr('data-count');
-
-			$({
-				countNum: $this.text()
-			}).animate({
-					countNum: countTo
-				},
-
-				{
-					duration: 1500,
-					easing: 'linear',
-					step: function () {
-						$this.text(Math.floor(this.countNum));
-					},
-					complete: function () {
-						$this.text(this.countNum);
-						//alert('finished');
-					}
-
-				});
-		});
+	// map initialize
+	$(map);
+});
 
 
 
+// CUSTOM JS
 
-		/* ========================================================================= */
-		/*   Contact Form Validating
-		/* ========================================================================= */
+// x = document.getElementsByClassName("slider")[0].getElementsByTagName("h1")[0].innerHTML
+// console.log(x)
+document.getElementsByClassName("slider")[0].getElementsByTagName("h1")[0].innerHTML = `<span>The</span> <span>Machine</span> <span>Learning</span> <span>Club</span> <br> <span>of</span> <span>IIT</span> <span>Hyderabad</span>
+`;
 
-
-		$('#contact-submit').click(function (e) {
-
-			//stop the form from being submitted
-			e.preventDefault();
-
-			/* declare the variables, var error is the variable that we use on the end
-			to determine if there was an error or not */
-			var error = false;
-			var name = $('#name').val();
-			var email = $('#email').val();
-			var subject = $('#subject').val();
-			var message = $('#message').val();
-
-			/* in the next section we do the checking by using VARIABLE.length
-			where VARIABLE is the variable we are checking (like name, email),
-			length is a JavaScript function to get the number of characters.
-			And as you can see if the num of characters is 0 we set the error
-			variable to true and show the name_error div with the fadeIn effect. 
-			if it's not 0 then we fadeOut the div( that's if the div is shown and
-			the error is fixed it fadesOut. 
-			
-			The only difference from these checks is the email checking, we have
-			email.indexOf('@') which checks if there is @ in the email input field.
-			This JavaScript function will return -1 if no occurrence have been found.*/
-			if (name.length == 0) {
-				var error = true;
-				$('#name').css("border-color", "#D8000C");
-			} else {
-				$('#name').css("border-color", "#666");
-			}
-			if (email.length == 0 || email.indexOf('@') == '-1') {
-				var error = true;
-				$('#email').css("border-color", "#D8000C");
-			} else {
-				$('#email').css("border-color", "#666");
-			}
-			if (subject.length == 0) {
-				var error = true;
-				$('#subject').css("border-color", "#D8000C");
-			} else {
-				$('#subject').css("border-color", "#666");
-			}
-			if (message.length == 0) {
-				var error = true;
-				$('#message').css("border-color", "#D8000C");
-			} else {
-				$('#message').css("border-color", "#666");
-			}
-
-			//now when the validation is done we check if the error variable is false (no errors)
-			if (error == false) {
-				//disable the submit button to avoid spamming
-				//and change the button text to Sending...
-				$('#contact-submit').attr({
-					'disabled': 'false',
-					'value': 'Sending...'
-				});
-
-				/* using the jquery's post(ajax) function and a lifesaver
-				function serialize() which gets all the data from the form
-				we submit it to send_email.php */
-				$.post("sendmail.php", $("#contact-form").serialize(), function (result) {
-					//and after the ajax request ends we check the text returned
-					if (result == 'sent') {
-						//if the mail is sent remove the submit paragraph
-						$('#cf-submit').remove();
-						//and show the mail success div with fadeIn
-						$('#mail-success').fadeIn(500);
-					} else {
-						//show the mail failed div
-						$('#mail-fail').fadeIn(500);
-						//re enable the submit button by removing attribute disabled and change the text back to Send The Message
-						$('#contact-submit').removeAttr('disabled').attr('value', 'Send The Message');
-					}
-				});
-			}
-		});
+document.getElementById("team").getElementsByClassName("section-title")[0].getElementsByTagName("h2")[0].innerHTML = `<span>Our</span> <span>Team</span>`;
 
 
-	})(jQuery);
+document.getElementById("about").getElementsByTagName("img")[0].src = "https://thumbs.gfycat.com/ElasticUnrealisticHammerkop-size_restricted.gif";
 
 
 
-	window.marker = null;
+$(document).on("scroll", function() {
+  var pageTop = $(document).scrollTop();
+  var pageBottom = pageTop + $(window).height();
+  var tags = $(".feature.bg-2");
 
-	function initialize() {
-		var map;
+  for (var i = 0; i < tags.length; i++) {
+    var tag = tags[i];
 
-		var latitude = $('#map').data('lat');
-		var longitude = $('#map').data('long');
-		var nottingham = new google.maps.LatLng(latitude, longitude);
+    if ($(tag).position().top < pageBottom) {
+      $(tag).addClass("visible");
+    } else {
+      $(tag).removeClass("visible");
+    }
+  }
+});
 
-		var style = [{
-			"stylers": [{
-				"hue": "#ff61a6"
-			}, {
-				"visibility": "on"
-			}, {
-				"invert_lightness": true
-			}, {
-				"saturation": 40
-			}, {
-				"lightness": 10
-			}]
-		}];
 
-		var mapOptions = {
-			// SET THE CENTER
-			center: nottingham,
+$(document).on("scroll", function() {
+  var pageTop = $(document).scrollTop();
+  var pageBottom = pageTop + $(window).height();
+  var tags = $("#team");
 
-			// SET THE MAP STYLE & ZOOM LEVEL
-			mapTypeId: google.maps.MapTypeId.ROADMAP,
-			zoom: 9,
+  for (var i = 0; i < tags.length; i++) {
+    var tag = tags[i];
 
-			// SET THE BACKGROUND COLOUR
-			backgroundColor: "#000",
+    if ($(tag).position().top < pageBottom) {
+      $(tag).addClass("visible");
+    } else {
+      $(tag).removeClass("visible");
+    }
+  }
+});
 
-			// REMOVE ALL THE CONTROLS EXCEPT ZOOM
-			zoom: 17,
-			panControl: false,
-			zoomControl: true,
-			mapTypeControl: false,
-			scaleControl: false,
-			streetViewControl: false,
-			overviewMapControl: false,
-			zoomControlOptions: {
-				style: google.maps.ZoomControlStyle.LARGE
-			}
-
-		}
-		map = new google.maps.Map(document.getElementById('map'), mapOptions);
-
-		// SET THE MAP TYPE
-		var mapType = new google.maps.StyledMapType(style, {
-			name: "Grayscale"
-		});
-		map.mapTypes.set('grey', mapType);
-		map.setMapTypeId('grey');
-
-		//CREATE A CUSTOM PIN ICON
-		var marker_image = $('#map').data('marker');
-		var pinIcon = new google.maps.MarkerImage(marker_image, null, null, null, new google.maps.Size(25, 33));
-
-		marker = new google.maps.Marker({
-			position: nottingham,
-			map: map,
-			icon: pinIcon,
-			title: 'navigator'
-		});
-	}
-
-	var map = $('#map');
-	if (map.length != 0) {
-		google.maps.event.addDomListener(window, 'load', initialize);
-	}
