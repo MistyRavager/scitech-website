@@ -501,3 +501,19 @@ canvas {
     color: #d3d3d3;
   }
 }
+
+
+// Footer
+
+.footer {
+  background-color: #000;
+  margin-top: -50px;
+
+  .footer-menu ul li a{
+    color: #a9a9a9 ;
+  }
+
+  .footer-menu ul li a:hover{
+    color: $color_2 ;
+  }
+}

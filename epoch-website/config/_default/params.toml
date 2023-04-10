@@ -26,7 +26,7 @@ Brooklyn, New South Wales
 Australia
 """
 # copyright
-copyright = "Designed By [Themefisher](https://themefisher.com/) & Developed By [Gethugothemes](https://gethugothemes.com/)"
+copyright = "Designed By [Themefisher](https://themefisher.com/) & Developed with ❤️ by [Lambda IITH](https://iith.dev/)"
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>" 
 custom_script= ""
 # google tag manager, see https://developers.google.com/tag-manager/

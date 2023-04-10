@@ -62,26 +62,21 @@ url = "about/"
 weight = 2
 
 [[footer]]
-name = "Project"
-url = "project/"
+name = "Team"
+url = "#team-row"
 weight = 3
 
 [[footer]]
-name = "Service"
-url = "service/"
+name = "Discord"
+url = ""
 weight = 4
 
 [[footer]]
-name = "Pricing"
-url = "pricing/"
+name = "Github"
+url = ""
 weight = 5
 
 [[footer]]
-name = "FAQ"
-url = "faq/"
+name = "Blogs"
+url = "blog/"
 weight = 6
-
-[[footer]]
-name = "Contact"
-url = "contact/"
-weight = 7
