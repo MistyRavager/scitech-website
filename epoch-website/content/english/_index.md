@@ -175,7 +175,7 @@ cta:
 funfacts:
   enable: true
   title: "Fun Facts About Us"
-  description: "'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, <br> there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics'"
+  description: "'If you torture the data long enough, it will confess'"
   funfact_item:
   # funfacts item loop
   - icon: "fas fa-mug-hot" #https://fontawesome.com/v5.15/icons
@@ -199,21 +199,21 @@ funfacts:
 
   testimonial_slider:
   # testimonial item loop
-  - name: "Amelia Earhart"
-    image: "images/clients/avatar-1.webp"
-    designation: "Aviator"
-    content: "Flying may not be all plain sailing, but the fun of it is worth the price."
+  - name: "Bill Gates"
+    image: "images/clients/avatar-1.jpeg"
+    designation: "Billionaire"
+    content: "A breakthrough in machine learning would be worth ten Microsofts."
   # testimonial item loop
-  - name: "Orville Wright"
+  - name: "Mark Cuban"
     image: "images/clients/avatar-2.jpeg"
-    designation: "Aviation Pioneer"
-    content: "If we worked on the assumption that what is accepted as true really is true, then there would be little hope for advance."
+    designation: "Another Billionaire"
+    content: "Whatever you're doing if you don't understand it, learn it. Because otherwise you're going to be a dinosaur within 3 years."
 
   # testimonial item loop
-  - name: "Leonardo Da Vinci"
+  - name: "Jeff Bezos"
     image: "images/clients/avatar-3.jpeg"
-    designation: "Polymath"
-    content: "Once you have tasted flight, you will forever walk the earth with your eyes turned skyward. For there you have been, and there you will always long to return."
+    designation: "Yet Another Billionaire"
+    content: "AI is in a golden age and solving problems that were once in the realm of sci-fi."
 
 
 ---
