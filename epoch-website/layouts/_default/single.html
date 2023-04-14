@@ -3,7 +3,7 @@
 {{ partial "page-title.html" . }}
 
 <!-- checking blog -->
-{{ if or (eq .Section "post") (eq .Section "posts") (eq .Section "blog") (eq .Section "blogs") (eq .Section "news") (eq .Section "categories") (eq .Section "tags") }}
+{{ if or (eq .Section "blog") (eq .Section "session") }}
 
 <section class="page-wrapper">
   <div class="container">

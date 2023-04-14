@@ -12,19 +12,31 @@ url = "#about"
 weight = 2
 
 [[main]]
-name = "Projects"
-url = "project/"
+name = "Blogs"
+url = "blog/"
 weight = 3
 
 [[main]]
-name = "Blogs"
-url = "blog/"
+name = "Projects"
+url = "project/"
 weight = 4
+
+[[main]]
+name = "Sessions"
+url = "session/"
+weight = 5
+
+[[main]]
+name = "Hackathons"
+url = "hackathon/"
+weight = 6
 
 [[main]]
 name = "Team"
 url = "#team-row"
-weight = 5
+weight = 7
+
+
 
 # [[main]]
 #weight = 5
