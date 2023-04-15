@@ -121,10 +121,17 @@ $(document).ready(function () {
 document.getElementsByClassName("slider")[0].getElementsByTagName("h1")[0].innerHTML = `<span>The</span> <span>Machine</span> <span>Learning</span> <span>Club</span> <br> <span>of</span> <span>IIT</span> <span>Hyderabad</span>
 `;
 
+
+
+
 document.getElementById("team").getElementsByClassName("section-title")[0].getElementsByTagName("h2")[0].innerHTML = `<span>Our</span> <span>Team</span>`;
 
 
-document.getElementById("about").getElementsByTagName("img")[0].src = "https://thumbs.gfycat.com/ElasticUnrealisticHammerkop-size_restricted.gif";
+
+// document.getElementById("about").getElementsByTagName("img")[0].src = "https://thumbs.gfycat.com/AdorableJoyfulLemming-max-1mb.gif";
+document.getElementById("about").getElementsByClassName("col-md-5")[0].getElementsByClassName("block")[0].insertAdjacentHTML('afterbegin', `<video src="videos/NN.mp4" autoplay loop muted class="img-responsive"></video>`);
+const imageElement = document.getElementById("about").getElementsByClassName("col-md-5")[0].getElementsByClassName("block")[0].getElementsByTagName("img")[0];
+imageElement.remove();
 
 const cta = document.getElementsByClassName("call-to-action")[0];
 cta.insertAdjacentHTML(`afterend`, `<canvas id="canvas"></canvas>`);
