@@ -1,6 +1,6 @@
 ---
-title: "Latest News"
+title: "OUR SESSIONS"
 description: ""
 draft: false
-bg_image: "images/feature-bg2.png"
+bg_image: "images/AI-art-5.png"
 ---

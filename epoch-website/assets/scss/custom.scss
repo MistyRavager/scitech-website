@@ -2,6 +2,7 @@
 
 $color_1: #a32cc4;
 $color_2: #af69ef;
+$epoch_color: #ac8cff;
 $color_3: rgb(169, 157, 157);
 $color_4: #555;
 $color_5: #7b7b7b;
@@ -12,6 +13,8 @@ $color_9: #7a4988;
 $background-color_1: #292f36;
 $background-color_2: rgba(123, 123, 123, 0.7);
 $background-color_3: #fff;
+
+// ******************* LANDING PAGE *******************
 
 // #################### For the slider #################### 
 .slider {
@@ -512,4 +515,50 @@ canvas {
   .footer-menu ul li a:hover{
     color: $color_2 ;
   }
+}
+
+// ******************* BLOGS AND SESSIONS *******************
+.page-wrapper{
+  background-color: #121212;
+}
+
+section.page-title.bg-2::before{
+  opacity: 0;
+}
+
+section.page-title.bg-2{
+  h1{
+    font-weight: 1000 !important;
+    text-shadow: 0.01em 0 black, 0 0.01em black, -0.01em 0 black,
+      0 -0.01em black;
+  }
+}
+
+
+//make post background dark grey
+.post{
+  background-color: #121212;
+}
+
+.post img {
+  border-radius: 5%;
+}
+
+.widget .widget-title{
+  border-bottom: 1px solid $epoch_color;
+  padding-bottom: 4px;
+  color: #a9a9a9;
+}
+
+.media-heading a{
+  color: #a9a9a9 !important;
+}
+
+.media-object{
+  border-radius: 5%;
+}
+
+// ******************* GENERAL STUFF *******************
+.btn.btn-main{
+  border-radius: 5px;
 }
