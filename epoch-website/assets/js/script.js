@@ -114,68 +114,45 @@ $(document).ready(function () {
 
 
 
-// CUSTOM JS
+// ####################  CUSTOM JAVASCRIPT ####################
 
-// x = document.getElementsByClassName("slider")[0].getElementsByTagName("h1")[0].innerHTML
-// console.log(x)
+// Adds spans to heading; needed for animation
 document.getElementsByClassName("slider")[0].getElementsByTagName("h1")[0].innerHTML = `<span>The</span> <span>Machine</span> <span>Learning</span> <span>Club</span> <br> <span>of</span> <span>IIT</span> <span>Hyderabad</span>
 `;
 
-
-
-
+// Adds spans to another heading; also needed for animation
 document.getElementById("team").getElementsByClassName("section-title")[0].getElementsByTagName("h2")[0].innerHTML = `<span>Our</span> <span>Team</span>`;
 
-
-
-// document.getElementById("about").getElementsByTagName("img")[0].src = "https://thumbs.gfycat.com/AdorableJoyfulLemming-max-1mb.gif";
+// Adds video to about section. We also remove the image.
 document.getElementById("about").getElementsByClassName("col-md-5")[0].getElementsByClassName("block")[0].insertAdjacentHTML('afterbegin', `<video src="videos/NN.mp4" autoplay loop muted class="img-responsive"></video>`);
 const imageElement = document.getElementById("about").getElementsByClassName("col-md-5")[0].getElementsByClassName("block")[0].getElementsByTagName("img")[0];
 imageElement.remove();
 
+
+//This section is for the connecting dots magic background of the testimonials section
 const cta = document.getElementsByClassName("call-to-action")[0];
 cta.insertAdjacentHTML(`afterend`, `<canvas id="canvas"></canvas>`);
 const testimo = document.getElementsByClassName("testimonial")[0];
-
 const canv = document.getElementById("canvas");
 
+// This finds the size of the div in which we want to insert the background.
 var offsets = testimo.getBoundingClientRect();
-
 function canvsize() {
   canv.width = testimo.offsetWidth;
   canv.height = 1 * testimo.offsetHeight;
   canv.style.marginBottom = -1 * testimo.offsetHeight + "px";
-  // canv.style.marginTop = -0.5 * cta.offsetHeight + "px";
   canv.top = offsets.top;
 }
 canvsize();
 
+// Keep resizing the background. Ensures that it is responsive.
 window.onresize = canvsize;
 var intervalId = setInterval(canvsize, 3000);
 
-// canv.offsetWidth = testimo.offsetWidth;
-// canv.offsetHeight = testimo.offsetHeight;
-// canv.offsetLeft = offsets.left;
-// canv.offsetTop = offsets.top;
-// const testimo = document.getElementsByClassName("testimonial")[0];
 
-
-// org_html = testimo.innerHTML;
-// new_html = `<canvas id="canvas">` + org_html + `</canvas>`;
-// testimo.innerHTML = new_html;
-console.log("hi" + testimo.offsetWidth);
-console.log(offsets.left);
-console.log(offsets.top);
-console.log(canv.style);
-console.log(canv.style.left);
-console.log(canv.style.top);
-
-
+// The actual code for the background: Credit to: https://codepen.io/LeonGr/pen/eYoZJB
 var canvas = document.getElementById("canvas"),
     ctx = canvas.getContext('2d');
-
-// canvas.width = window.innerWidth;
-// canvas.height = window.innerHeight;
 
 var stars = [], // Array that contains the stars
     FPS = 60, // Frames per second
@@ -276,16 +253,7 @@ function tick() {
 tick();
 
 
-
-
-
-
-
-
-
-
-
-
+// This stuff is for the fade-in animation 
 
 $(document).on("scroll", function() {
   var pageTop = $(document).scrollTop();
@@ -302,7 +270,6 @@ $(document).on("scroll", function() {
     }
   }
 });
-
 
 $(document).on("scroll", function() {
   var pageTop = $(document).scrollTop();
