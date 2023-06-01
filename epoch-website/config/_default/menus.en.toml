@@ -38,23 +38,23 @@ weight = 6
 #name = "More"
 #hasChildren = true
 
- # [[main]]
- # parent = "More"
- # name = "Service"
-  #url = "service/"
-  #weight = 1
+# [[main]]
+# parent = "More"
+# name = "Service"
+#url = "service/"
+#weight = 1
 
-  #[[main]]
-  #parent = "More"
-  #name = "Pricing"
-  #url = "pricing/"
-  #weight = 2
+#[[main]]
+#parent = "More"
+#name = "Pricing"
+#url = "pricing/"
+#weight = 2
 
-  #[[main]]
-  #parent = "More"
-  #name = "FAQ"
-  #url = "faq/"
-  #weight = 3
+#[[main]]
+#parent = "More"
+#name = "FAQ"
+#url = "faq/"
+#weight = 3
   
 #[[main]]
 #name = "Contact"
