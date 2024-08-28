@@ -9,6 +9,10 @@
 @import "about";
 @import "gallery";
 
+html {
+  scroll-behavior: smooth;
+}
+
 @media (max-width: 47.99em) {
   body .container {
     padding: $vertical-rhythm * 4 $vertical-rhythm;
@@ -134,6 +138,7 @@ h3 {
   font-family: $font-header;
   letter-spacing: 2px;
   line-height: 1.45;
+  color: white !important;
 
   a {
     text-decoration: none;
